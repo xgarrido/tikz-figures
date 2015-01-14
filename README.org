@@ -1,0 +1,7 @@
+#+TITLE: =tikz/pgfplots= sample examples
+#+AUTHOR: Xavier Garrido
+#+EMAIL: xavier.garrido@gmail.com
+#+DATE: <2015-01-14 mer.>
+
+This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
+project.
