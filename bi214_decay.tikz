@@ -1,0 +1,218 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{black}{gray}
+
+  \clip (0,9) rectangle (20,29);
+
+  %% Excited states
+  \draw[semithick,black] (5.74675,11.71575) -- (16.54175,11.71575);
+  \draw[semithick,black] (5.74675,12.35075) -- (16.54175,12.35075);
+  \draw[semithick,black] (5.74675,12.98575) -- (16.54175,12.98575);
+  \draw[semithick,black] (5.7785,13.62075) -- (16.5735,13.62075);
+  \draw[semithick,black] (5.74675,14.9225) -- (16.54175,14.9225);
+  \draw[semithick,black] (5.74675,15.20825) -- (16.54175,15.20825);
+  \draw[semithick,black] (5.74675,16.79575) -- (16.54175,16.79575);
+  \draw[semithick,black] (5.74675,18.0975) -- (16.54175,18.0975);
+  \draw[semithick,black] (5.74675,22.51075) -- (16.54175,22.51075);
+
+  %% 1764 keV
+  \draw[line width=2pt,red] (13.843,14.89075) -- (13.843,26.32075);
+  \path[fill=red, yshift=-6pt] (13.6525,25.42117) -- (13.843,26.18317) -- (14.0335,25.42117) -- cycle;
+
+  %% 2204 keV
+  \draw[semithick,black] (15.4305,12.35075) -- (15.4305,26.32075);
+  \path[fill=black, yshift=-3pt] (15.3035,25.74502) -- (15.4305,26.25302) -- (15.5575,25.74502) -- cycle;
+
+  %% 1730 keV
+  \draw[black] (12.8905,15.20825) -- (12.8905,26.32075);
+  \begin{scope}[xshift=-49pt]
+    \path[fill=black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+    \draw[black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+  \end{scope}
+
+  %% 2447 keV
+  \draw[black] (16.22425,11.71575) -- (16.22425,26.32075);
+    \begin{scope}[xshift=45pt]
+    \path[fill=black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+    \draw[black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+  \end{scope}
+
+  %% 2204 keV
+  \draw[black] (14.63675,14.4145) -- (14.63675,26.32075);
+  \path[fill=black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+  \draw[black] (14.57325,26.03288) -- (14.63675,26.28688) -- (14.70025,26.03288) -- cycle;
+
+  \draw[black] (12.09675,18.06575) -- (12.09675,26.32075);
+  \path[fill=black] (12.03325,26.03288) -- (12.09675,26.28688) -- (12.16025,26.03288) -- cycle;
+  \draw[black] (12.03325,26.03288) -- (12.09675,26.28688) -- (12.16025,26.03288) -- cycle;
+
+  \draw[semithick,black] (3.81,10.50925) -- (3.81,26.3525);
+  \draw[line width=1.5pt,green] (3.81,26.3525) -- (5.7785,26.3525);
+  \path[fill=green] (5.20277,26.4795) -- (5.71077,26.3525) -- (5.20277,26.2255) -- cycle;
+
+  \begin{scope}[yshift=1pt]
+    \draw[semithick,black] (3.84175,22.5425) -- (5.74675,22.5425);
+    \path[fill=black, xshift=3pt] (5.17102,22.6695) -- (5.67902,22.5425) -- (5.17102,22.4155) -- cycle;
+  \end{scope}
+
+  %% 7.6%
+  \draw[semithick,black] (3.84175,18.0975) -- (5.715,18.0975);
+  \path[fill=black] (5.13927,18.2245) -- (5.64727,18.0975) -- (5.13927,17.9705) -- cycle;
+  \draw[semithick,black] (5.13927,18.2245) -- (5.64727,18.0975) -- (5.13927,17.9705) -- cycle;
+
+  %% 3.3%
+  \draw[semithick,black] (3.84175,16.79575) -- (5.74675,16.79575);
+  \path[fill=black] (5.17102,16.92275) -- (5.67902,16.79575) -- (5.17102,16.66875) -- cycle;
+  \draw[semithick,black] (5.17102,16.92275) -- (5.67902,16.79575) -- (5.17102,16.66875) -- cycle;
+
+  %% 18%
+  \draw[line width=1.5pt,green] (3.84175,14.89075) -- (5.74675,14.89075);
+  \path[fill=green] (5.17102,15.01775) -- (5.67902,14.89075) -- (5.17102,14.76375) -- cycle;
+  \draw[semithick,green] (5.17102,15.01775) -- (5.67902,14.89075) -- (5.17102,14.76375) -- cycle;
+
+  %% 18%
+  \draw[line width=1.5pt,green] (3.84175,15.20825) -- (5.74675,15.20825);
+  \path[fill=green] (5.17102,15.33525) -- (5.67902,15.20825) -- (5.17102,15.08125) -- cycle;
+  \draw[semithick,green] (5.17102,15.32525) -- (5.67902,15.20825) -- (5.17102,15.08125) -- cycle;
+
+  %% 2.5%
+  \draw[semithick,black] (3.84175,13.62075) -- (5.74675,13.62075);
+  \path[fill=black] (5.17102,13.74775) -- (5.67902,13.62075) -- (5.17102,13.49375) -- cycle;
+  \draw[semithick,black] (5.17102,13.74775) -- (5.67902,13.62075) -- (5.17102,13.49375) -- cycle;
+
+  %% 4.3%
+  \draw[semithick,black] (3.84175,12.98575) -- (5.74675,12.98575);
+  \path[fill=black] (5.17102,13.11275) -- (5.67902,12.98575) -- (5.17102,12.85875) -- cycle;
+  \draw[semithick,black] (5.17102,13.11275) -- (5.67902,12.98575) -- (5.17102,12.85875) -- cycle;
+
+  %% 5.5%
+  \draw[semithick,black] (3.84175,12.35075) -- (5.74675,12.35075);
+  \path[fill=black] (5.17102,12.47775) -- (5.67902,12.35075) -- (5.17102,12.22375) -- cycle;
+  \draw[semithick,black] (5.17102,12.47775) -- (5.67902,12.35075) -- (5.17102,12.22375) -- cycle;
+
+  %% 2.8%
+  \draw[semithick,black] (3.84175,11.71575) -- (5.74675,11.71575);
+  \path[fill=black] (5.17102,11.84275) -- (5.67902,11.71575) -- (5.17102,11.58875) -- cycle;
+  \draw[semithick,black] (5.17102,11.84275) -- (5.67902,11.71575) -- (5.17102,11.58875) -- cycle;
+
+  %% 8.3%
+  \draw[semithick,black] (3.84175,14.4145) -- (5.74675,14.4145);
+  \path[fill=black] (5.17102,14.5415) -- (5.67902,14.4145) -- (5.17102,14.2875) -- cycle;
+  \draw[semithick,black] (5.17102,14.5415) -- (5.67902,14.4145) -- (5.17102,14.2875) -- cycle;
+
+  %% Fundamental levels
+  \draw[line width=2pt,black] (0.98425,10.44575) -- (4.79425,10.44575);
+  \draw[line width=2pt,black] (5.74675,26.3525) -- (16.54175,26.3525);
+
+
+  \draw[semithick,black] (6.38175,18.06575) -- (6.38175,22.51075);
+  \path[fill=black] (6.25475,21.93502) -- (6.38175,22.44302) -- (6.50875,21.93502) -- cycle;
+  \draw[semithick,black] (6.25475,21.93502) -- (6.38175,22.44302) -- (6.50875,21.93502) -- cycle;
+
+  \draw[black] (7.1755,16.79575) -- (7.1755,22.51075);
+  \path[fill=black] (7.112,22.22288) -- (7.1755,22.47688) -- (7.239,22.22288) -- cycle;
+  \draw[black] (7.112,22.22288) -- (7.1755,22.47688) -- (7.239,22.22288) -- cycle;
+
+  \draw[line width=2pt,red] (7.96925,15.20825) -- (7.96925,22.51075);
+  \path[fill=red, yshift=-6pt] (7.77875,21.61117) -- (7.96925,22.37317) -- (8.15975,21.61117) -- cycle;
+
+  \draw[black] (9.398,13.62075) -- (9.398,22.51075);
+  \path[fill=black] (9.3345,22.22288) -- (9.398,22.47688) -- (9.4615,22.22288) -- cycle;
+  \draw[black] (9.3345,22.22288) -- (9.398,22.47688) -- (9.4615,22.22288) -- cycle;
+
+  \draw[black] (10.033,12.98575) -- (10.033,22.51075);
+  \path[fill=black] (9.9695,22.22288) -- (10.033,22.47688) -- (10.0965,22.22288) -- cycle;
+  \draw[black] (9.9695,22.22288) -- (10.033,22.47688) -- (10.0965,22.22288) -- cycle;
+
+  \draw[line width=8.1bp,red] (11.14425,22.51075) -- (11.14425,25.52075);
+  \path[fill=red, yshift=-7pt] (10.89025,25.09943) -- (11.14425,26.11543) -- (11.39825,25.09943) -- cycle;
+
+  %% \draw[black] (3.19828,16.637) -- (3.21522,16.637);
+  %% \draw[semithick,black] (5.74675,14.4145) -- (16.54175,14.4145);
+
+  \draw[semithick,black] (8.763,14.4145) -- (8.763,22.51075);
+  \path[fill=black] (8.636,21.93502) -- (8.763,22.44302) -- (8.89,21.93502) -- cycle;
+  \draw[semithick,black] (8.636,21.93502) -- (8.763,22.44302) -- (8.89,21.93502) -- cycle;
+
+  \draw[black, yshift=8pt] (3.84175,14.93825) -- (3.52425,14.93825) -- (3.52425,15.6845) -- (3.84175,15.6845);
+
+  \path (11.938   ,25.3745) node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1378};
+  \path (12.73175 ,25.3745) node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1730};
+  \path (14.478   ,25.3745)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1847};
+  \path (15.27175 ,25.3745)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}2204};
+  \path (16.0655  ,25.3745)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}2447};
+  \path (10.82675 ,25.3745)  node[text=red,anchor=base west,rotate=90.0] {\huge{}609 keV};
+  \path (13.68425 ,25.3745)  node[text=red,anchor=base west,rotate=90.0] {\huge{}1764 keV};
+  \path (6.223    ,21.3645)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}768};
+  \path (7.01675  ,21.3645)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}934};
+  \path (8.60425  ,21.3645)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1238};
+  \path (9.28925  ,21.3645)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1408};
+  \path (9.93425  ,21.3645)  node[text=black,anchor=base west,rotate=90.0] {\LARGE{}1509};
+  \path (7.8105   ,21.3645)  node[text=red,anchor=base west,rotate=90.0] {\huge{}1120 keV};
+
+
+  {
+    \large
+    \path (12.8905  ,26.432) node[text=black, anchor=base east,rotate=90.0] {2.9\%};
+    \path (14.63675 ,26.432) node[text=black, anchor=base east,rotate=90.0] {2.1\%};
+    \path (15.4305  ,26.432) node[text=black, anchor=base east,rotate=90.0] {5.0\%};
+    \path (16.22425 ,26.432) node[text=black, anchor=base east,rotate=90.0] {1.5\%};
+    \path (13.843   ,26.432) node[text=red,   anchor=base east,rotate=90.0] {\LARGE{}15.8\%};
+    \path (12.09675 ,26.432) node[text=black, anchor=base east,rotate=90.0] {3.4\%};
+    \path (11.14425 ,26.432) node[text=red,   anchor=base east,rotate=90.0] {\huge{}46\%};
+
+    \path (6.38175  ,22.422) node[text=black, anchor=base east,rotate=90.0] {4.9\%};
+    \path (7.1755   ,22.422) node[text=black, anchor=base east,rotate=90.0] {3.2\%};
+    \path (7.96925  ,22.422) node[text=red,   anchor=base east,rotate=90.0] {\LARGE{}15.0\%};
+    \path (8.763    ,22.422) node[text=black, anchor=base east,rotate=90.0] {5.9\%};
+    \path (10.19175 ,22.422) node[text=black, anchor=base east,rotate=90.0] {2.2\%};
+    \path (9.55675  ,22.422) node[text=black, anchor=base east,rotate=90.0] {2.5\%};
+  }
+
+  {
+    \large
+    \path (4.,11.58875) node[text=black,anchor=base west] {2.8\%};
+    \path (4.,12.192) node[text=black,anchor=base west]   {5.5\%};
+    \path (4.,12.827) node[text=black,anchor=base west]   {4.3\%};
+    \path (4.,13.4985) node[text=black,anchor=base west]  {2.5\%};
+    \path (4.,14.85725) node[text=green,anchor=base west] {\Large{}18\%};
+    \path (4.,15.6575) node[text=green,anchor=base west]  {\Large{}18\%};
+    \path (4.,16.764) node[text=black,anchor=base west]   {3.3\%};
+    \path (4.,18.00225) node[text=black,anchor=base west] {7.6\%};
+    \path (4.,22.4155) node[text=black,anchor=base west]  {1.0\%};
+    \path (4.,26.22075) node[text=green,anchor=base west] {\Large{}18\%};
+    \path (4.,14.21925) node[text=black,anchor=base west] {8.3\%};
+  }
+
+
+  \path (1.30175,10.12825) node[text=black,anchor=base west] {\fontsize{22.0}{26.4}\selectfont{}19.7 min};
+  \path (1.43675,11.39825) node[text=black,anchor=base west] {\fontsize{27.0}{32.4}\selectfont{}$^{214}_{83}$Bi};
+  \path (5.858,27.27325) node[text=black,anchor=base west] {\fontsize{27.0}{32.4}\selectfont{}$^{214}_{84}$Po};
+  \path (5.858,26.00325) node[text=black,anchor=base west] {\fontsize{22.0}{26.4}\selectfont{}164$\mu$s};
+  \path (1.30175,27.1145) node[text=black,anchor=base west] {\LARGE{}Q$_\beta$ = 3.27 MeV};
+  \path (0.3175,15.19075) node[text=black,anchor=base west] {\large{}E$_e^\text{max}\sim1.5$ MeV};
+
+  {
+    \Large
+    \path (16.79575,22.51075) node[text=black,anchor=base west] {609};
+    \path (16.66875,12.35075) node[text=black,anchor=base west] {2204};
+    \path (16.7005,12.98575) node[text=black,anchor=base west]  {2118};
+    \path (16.7005,13.6525) node[text=black,anchor=base west]   {2017};
+    \path (16.66875,14.95425) node[text=black,anchor=base west] {1764};
+    \path (16.66875,15.52575) node[text=black,anchor=base west] {1730};
+    \path (16.7005,16.79575) node[text=black,anchor=base west]  {1543};
+    \path (16.66875,18.12925) node[text=black,anchor=base west] {1378};
+    \path (16.7005,14.4145) node[text=black,anchor=base west] {1847};
+    \path (16.66875,11.71575) node[text=black,anchor=base west] {2447 keV};
+  }
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

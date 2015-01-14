@@ -1,0 +1,136 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{black}{gray}
+
+  \clip (0,9) rectangle (20,29);
+
+  \draw[semithick,black] (4.0005,11.2395) -- (4.0005,21.3995);
+
+  %% Fundamental levels
+  \draw[line width=2pt,black] (0.8255,11.2395) -- (4.6355,11.2395);
+  \draw[line width=2pt,black] (6.5405,26.4795) -- (15.4305,26.4795);
+
+  %% Excited states
+  \draw[semithick,black] (6.5405,21.3995) -- (15.4305,21.3995);
+  \draw[semithick,black] (6.5405,12.5095) -- (15.4305,12.5095);
+  \draw[semithick,black] (6.5405,18.2245) -- (15.4305,18.2245);
+  \draw[semithick,black] (6.5405,16.3195) -- (15.4305,16.3195);
+  \draw[semithick,black] (6.5405,14.4145) -- (15.4305,14.4145);
+
+  %% 3.1%
+  \draw[semithick,black] (4.0005,12.5095) -- (6.5405,12.5095);
+  \path[fill=black] (5.96477,12.6365) -- (6.47277,12.5095) -- (5.96477,12.3825) -- cycle;
+  \draw[semithick,black] (5.96477,12.6365) -- (6.47277,12.5095) -- (5.96477,12.3825) -- cycle;
+
+  %% 22.8%
+  \draw[semithick,green] (4.0005,14.4145) -- (6.5405,14.4145);
+  \path[fill=green] (5.96477,14.5415) -- (6.47277,14.4145) -- (5.96477,14.2875) -- cycle;
+  \draw[semithick,green] (5.96477,14.5415) -- (6.47277,14.4145) -- (5.96477,14.2875) -- cycle;
+
+  %% 21.7%
+  \draw[semithick,green] (4.0005,16.3195) -- (6.5405,16.3195);
+  \path[fill=green] (5.96477,16.4465) -- (6.47277,16.3195) -- (5.96477,16.1925) -- cycle;
+  \draw[semithick,green] (5.96477,16.4465) -- (6.47277,16.3195) -- (5.96477,16.1925) -- cycle;
+
+  %% 51%
+  \draw[semithick,green] (4.0005,18.2245) -- (6.5405,18.2245);
+  \path[fill=green] (5.96477,18.3515) -- (6.47277,18.2245) -- (5.96477,18.0975) -- cycle;
+  \draw[semithick,green] (5.96477,18.3515) -- (6.47277,18.2245) -- (5.96477,18.0975) -- cycle;
+
+  %% 0.03%
+  \draw[semithick,black] (4.0005,21.3995) -- (6.5405,21.3995);
+  \path[fill=black] (5.96477,21.5265) -- (6.47277,21.3995) -- (5.96477,21.2725) -- cycle;
+  \draw[semithick,black] (5.96477,21.5265) -- (6.47277,21.3995) -- (5.96477,21.2725) -- cycle;
+
+  %% 2615 keV
+  \draw[line width=8.1bp,red] (14.1605,21.3995) -- (14.1605,25.4795);
+  \begin{scope}[yshift=-5pt]
+    \path[fill=red] (13.9065,25.25818) -- (14.1605,26.27418) -- (14.4145,25.25818) -- cycle;
+    \draw[very thick,red] (13.9065,25.25818) -- (14.1605,26.27418) -- (14.4145,25.25818) -- cycle;
+  \end{scope}
+
+  %% 860 keV
+  \draw[semithick,black] (12.8905,16.3195) -- (12.8905,21.3995);
+  \path[fill=black] (12.7635,20.82377) -- (12.8905,21.33177) -- (13.0175,20.82377) -- cycle;
+  \draw[semithick,black] (12.7635,20.82377) -- (12.8905,21.33177) -- (13.0175,20.82377) -- cycle;
+
+  %% 763 keV
+  \draw[black] (10.3505,12.5095) -- (10.3505,18.2245);
+  \path[fill=black] (10.287,17.93663) -- (10.3505,18.19063) -- (10.414,17.93663) -- cycle;
+  \draw[black] (10.287,17.93663) -- (10.3505,18.19063) -- (10.414,17.93663) -- cycle;
+
+  %% 583 keV
+  \draw[line width=4pt,red] (11.6205,18.2245) -- (11.6205,21.0995);
+  \begin{scope}[yshift=-4pt]
+    \path[fill=red] (11.43,20.49992) -- (11.6205,21.26192) -- (11.811,20.49992) -- cycle;
+    \draw[thick,red] (11.43,20.49992) -- (11.6205,21.26192) -- (11.811,20.49992) -- cycle;
+  \end{scope}
+
+  %% 511 keV
+  \draw[line width=2pt,red] (9.0805,14.4145) -- (9.0805,18.0245);
+  \path[fill=red] (8.9535,17.64877) -- (9.0805,18.15677) -- (9.2075,17.64877) -- cycle;
+  \draw[semithick,red] (8.9535,17.64877) -- (9.0805,18.15677) -- (9.2075,17.64877) -- cycle;
+
+  %% 277 keV
+  \draw[black] (7.8105,16.3195) -- (7.8105,18.2245);
+  \path[fill=black] (7.747,17.93663) -- (7.8105,18.19063) -- (7.874,17.93663) -- cycle;
+  \draw[black] (7.747,17.93663) -- (7.8105,18.19063) -- (7.874,17.93663) -- cycle;
+
+  {
+    \Large
+    \path (15.58925,21.3995) node[text=black,anchor=base west] {2615};
+    \path (15.58925,12.5095) node[text=black,anchor=base west] {3961 keV};
+    \path (15.58925,14.4145) node[text=black,anchor=base west] {3708};
+    \path (15.58925,16.3195) node[text=black,anchor=base west] {3475};
+    \path (15.58925,18.2245) node[text=black,anchor=base west] {3198};
+  }
+
+  {
+    \large
+    \path (10.00175,18.8595)  node[text=black,anchor=base west] {2.0\%};
+    \path (7.25175 ,18.8595)  node[text=black,anchor=base west] {7.8\%};
+    \path (8.363   ,18.8595)  node[text=red,anchor=base west] {\LARGE{}22.1\%};
+
+    \path (12.473,22.0345) node[text=black,anchor=base west] {13.8\%};
+    \path (11.103,22.0345) node[text=red,anchor=base west] {\LARGE{}86\%};
+
+    \path (13.5255,27.1145) node[text=red,anchor=base west] {\huge{}100\%};
+  }
+
+  \path (11.46175 ,20.17075) node[text=red,anchor=base west,rotate=90.0] {\LARGE{}583};
+  \path (12.73175 ,20.17075) node[text=black,anchor=base west,rotate=90.0] {\LARGE{}860};
+
+  \path (7.65175  ,17.5)   node[text=black,anchor=base west,rotate=90.0] {\LARGE{}277};
+  \path (8.92175  ,17.5)   node[text=red,anchor=base west,rotate=90.0] {\LARGE{}511};
+  \path (10.19175 ,17.5)   node[text=black,anchor=base west,rotate=90.0] {\LARGE{}763};
+
+  \path (13.843,25.3492)   node[text=red,anchor=base west,rotate=90.0] {\huge{}2615 keV};
+
+  \path (1.0605,10.922) node[text=black,anchor=base west] {\fontsize{22.0}{26.4}\selectfont{}3.053 min};
+  \path (1.478,12.35075) node[text=black,anchor=base west] {\fontsize{27.0}{32.4}\selectfont{}$^{208}_{81}$Tl};
+  \path (7.05175,27.59075) node[text=black,anchor=base west] {\fontsize{27.0}{32.4}\selectfont{}$^{208}_{82}$Pb};
+  \path (1.4605,26.4795) node[text=black,anchor=base west] {\LARGE{}Q$_\beta$ = 4.99 MeV};
+
+  {
+    \large
+    \path (4.318,21.24075) node[text=black,anchor=base west] {0.03\%};
+    \path (4.318,18.06575) node[text=green,anchor=base west] {51\%};
+    \path (4.318,16.16075) node[text=green,anchor=base west] {21.7\%};
+    \path (4.318,14.25575) node[text=green,anchor=base west] {22.8\%};
+    \path (4.318,12.35075) node[text=black,anchor=base west] {3.1\%};
+  }
+
+  \path (0.83175,14.57325) node[text=black,anchor=base west] {\large{}E$_e^\text{max}\sim1.3$ MeV};
+  \path (0.83175,16.47825) node[text=black,anchor=base west] {\large{}E$_e^\text{max}\sim1.5$ MeV};
+  \path (0.83175,18.38325) node[text=black,anchor=base west] {\large{}E$_e^\text{max}\sim1.8$ MeV};
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
