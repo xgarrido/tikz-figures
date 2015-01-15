@@ -13,13 +13,18 @@ project.
   for f in *.tikz
   do
       filename=${f%.*}
+      export_dir=./doc/html/figures
       # Create pdf (if newer)
-      [ $f -nt ./figures/${filename}.pdf ] && tikz2pdf --once $f > /dev/null 2>&1
-      mkdir -p figures
-      (
-          cd figures
-          mv ../$filename.pdf .
-      )
+      [[ ! -a ${export_dir}/${filename}.pdf || $f -nt ${export_dir}/${filename}.pdf ]] && tikz2pdf --once $f > /dev/null 2>&1
+      mkdir -p ${export_dir}
+      # Create png file
+      convert -density 100 $filename.pdf ${export_dir}/$filename.png
+      mv $filename.pdf ${export_dir}/.
+      # Copy tikz file
+      cp $filename.tikz ${export_dir}/.
+      # Copy xfig (if any)
+      [[ -a $filename.fig ]] && cp $filename.fig ${export_dir}/.
+
       echo "* $filename"
       echo ":PROPERTIES:"
       echo ":HTML_CONTAINER_CLASS: tikz"
@@ -28,11 +33,13 @@ project.
       echo "[[./figures/$filename.png]]"
       echo "#+HTML: <div class=\"icons\">"
       typeset -A dict
-      dict=( pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o )
+      dict=( pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o fig fa-file-excel-o)
       for k in "${(@k)dict}"
       do
-          echo "[[./figures/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
+          [[ -a ${export_dir}/$filename.$k ]] &&
+              echo "[[./figures/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
       done
       echo "#+HTML: </div>"
+      echo "#+HTML: <hr/>"
   done
 #+END_SRC
