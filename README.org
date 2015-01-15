@@ -2,6 +2,37 @@
 #+AUTHOR: Xavier Garrido
 #+EMAIL: xavier.garrido@gmail.com
 #+DATE: <2015-01-14 mer.>
+#+OPTIONS: ^:{} toc:nil num:nil
+#+HTML_HEAD_EXTRA: <style> .tikz {position: relative; width: 500px;} </style>
+#+HTML_HEAD_EXTRA: <style> .icons {position: absolute; left: 500px; top: 0px;} </style>
 
 This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
 project.
+
+#+BEGIN_SRC shell :exports results :results raw
+  for f in *.tikz
+  do
+      filename=${f%.*}
+      # Create pdf (if newer)
+      [ $f -nt ./figures/${filename}.pdf ] && tikz2pdf --once $f > /dev/null 2>&1
+      mkdir -p figures
+      (
+          cd figures
+          mv ../$filename.pdf .
+      )
+      echo "* $filename"
+      echo ":PROPERTIES:"
+      echo ":HTML_CONTAINER_CLASS: tikz"
+      echo ":CUSTOM_ID: hidden"
+      echo ":END:"
+      echo "[[./figures/$filename.png]]"
+      echo "#+HTML: <div class=\"icons\">"
+      typeset -A dict
+      dict=( pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o )
+      for k in "${(@k)dict}"
+      do
+          echo "[[./figures/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
+      done
+      echo "#+HTML: </div>"
+  done
+#+END_SRC
