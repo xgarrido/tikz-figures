@@ -1,0 +1,163 @@
+
+\begin{tikzpicture}[y=-1cm, rounded corners]
+  \clip (-1.5cm,1.5cm) rectangle (36cm,-19cm);
+  \sf
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{orange}{RGB}{255,160,0}
+  \definecolor{violet}{RGB}{136,64,192}
+
+  \tikzstyle{year} = [color=gray, dashed, very thick]
+  \tikzstyle{feb}  = [blue, fill=blue!75, rounded corners=3ex, text=white]
+  \tikzstyle{data} = [red, opacity=0.6]
+  \tikzstyle{tb}   = [green, fill=green!75, rounded corners=3ex, text=white]
+  \tikzstyle{cb}   = [orange, fill=orange!75, rounded corners=3ex, text=white]
+  \tikzstyle{back} = [violet, fill=violet!75, rounded corners=3ex, text=white]
+
+  %% FEB
+  \fill[blue, opacity=0.2] (0.0,3.8) rectangle (3.5, 5.8);
+  \draw[feb] (3.5,3.8) rectangle (30, 5.8) node[pos=.5] {\huge\textbf{Développement, Tests \& Production Cartes FEB}};
+  \begin{scope}[xshift=3.5cm, yshift=4.2cm]
+    \draw[feb] (0,7.6) -- (0,8.0);
+    \draw[feb] (0,7.6) -- (0.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=2cm]
+      \path (0.0,0.0) node[text=blue, fill=white, rotate=45] {\Large Adaptation WaveCatcher};
+      \path (0.5,0.5) node[text=blue, fill=white, rotate=45] {\Large Puces SAMLONG};
+    \end{scope}
+  \end{scope}
+  \begin{scope}[xshift=17cm, yshift=4.2cm]
+    \draw[feb] (0,7.6) -- (0,8.0);
+    \draw[feb] (0,7.6) -- (0.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=2cm]
+      \path (0.0,0.0) node[text=blue, fill=white, rotate=45] {\Large Tests hardware};
+      \path (0.5,0.5) node[text=blue, fill=white, rotate=45] {\Large};
+    \end{scope}
+  \end{scope}
+  \begin{scope}[xshift=20cm, yshift=4.2cm]
+    \draw[feb] (0,7.6) -- (0,8.0);
+    \draw[feb] (0,7.6) -- (0.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=2cm]
+      \path (0.0,0.0) node[text=blue, fill=white, rotate=45] {\Large Production Puces};
+      \path (0.5,0.5) node[text=blue, fill=white, rotate=45] {\Large SAMLONG};
+    \end{scope}
+  \end{scope}
+  \begin{scope}[xshift=23cm, yshift=4.2cm]
+    \draw[feb] (0,7.6) -- (0,8.0);
+    \draw[feb] (0,7.6) -- (0.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=2cm]
+      \path (0.0,0.0) node[text=blue, fill=white, rotate=45] {\Large Production Cartes FEB};
+    \end{scope}
+  \end{scope}
+
+  %% CB
+  \begin{scope}[yshift=-3cm]
+    \draw[cb] (7.0,3.8) rectangle (30, 5.8) node[pos=.5] {\huge\textbf{Développement, Tests \& Production Cartes Contrôleur}};
+    \begin{scope}[xshift=10cm, yshift=1.4cm]
+      \draw[cb] (0,7.6) -- (0,7.2);
+      \draw[cb] (0,7.6) -- (0.5,8.08);
+      \begin{scope}[yshift=-9cm, xshift=2cm]
+        \path (0.0,0.0) node[text=orange, fill=white, rotate=-45] {\Large Architecture CB};
+      \end{scope}
+    \end{scope}
+    \begin{scope}[xshift=13cm, yshift=1.4cm]
+      \draw[cb] (0,7.6) -- (0,7.2);
+      \draw[cb] (0,7.6) -- (0.5,8.08);
+      \begin{scope}[yshift=-8.5cm, xshift=1.cm]
+        \path (0.0,0.0) node[text=orange, fill=white, rotate=-45] {\Large CAO};
+      \end{scope}
+    \end{scope}
+    %% \begin{scope}[xshift=21cm, yshift=1.4cm]
+    %%   \draw[cb] (0,7.6) -- (0,7.2);
+    %%   \draw[cb] (0,7.6) -- (0.5,8.08);
+    %%   \begin{scope}[yshift=-9cm, xshift=2cm]
+    %%     \path (0.0,0.0) node[text=orange, fill=white, rotate=-45] {\Large Dév. Firmware};
+    %%     \path (-0.5,0.5) node[text=orange, fill=white, rotate=-45] {\Large \& Tests};
+    %%   \end{scope}
+    %% \end{scope}
+    %% \begin{scope}[xshift=27cm, yshift=1.4cm]
+    %%   \draw[cb] (0,7.6) -- (0,7.2);
+    %%   \draw[cb] (0,7.6) -- (0.5,8.08);
+    %%   \begin{scope}[yshift=-9.2cm, xshift=2.5cm]
+    %%     \path (0.0,0.0) node[text=orange, fill=white, rotate=-45] {\Large Production Cartes CB};
+    %%   \end{scope}
+    %% \end{scope}
+  \end{scope}
+
+  %% TB
+  \begin{scope}[yshift=-6cm]
+    \draw[tb] (22.0,3.8) rectangle (33, 5.8) node[pos=.5] {\huge\textbf{Dév., Tests \& Production TB}};
+    %% \begin{scope}[xshift=25cm, yshift=1.4cm]
+    %%   \draw[tb] (0,7.6) -- (0,7.2);
+    %%   \draw[tb] (0,7.6) -- (0.5,8.08);
+    %%   \begin{scope}[yshift=-9cm, xshift=2cm]
+    %%     \path (0.0,0.0) node[text=green, fill=white, rotate=-45] {\Large Architecture TB};
+    %%   \end{scope}
+    %% \end{scope}
+    %% \begin{scope}[xshift=27cm, yshift=1.4cm]
+    %%   \draw[tb] (0,7.6) -- (0,7.2);
+    %%   \draw[tb] (0,7.6) -- (0.5,8.08);
+    %%   \begin{scope}[yshift=-8.5cm, xshift=1cm]
+    %%     \path (0.0,0.0) node[text=green, fill=white, rotate=-45] {\Large CAO};
+    %%   \end{scope}
+    %% \end{scope}
+    \begin{scope}[xshift=30cm, yshift=1.4cm]
+      \draw[tb] (0,7.6) -- (0,7.2);
+      \draw[tb] (0,7.6) -- (0.5,8.08);
+      \begin{scope}[yshift=-9cm, xshift=2cm]
+        \path (0.0,0.0) node[text=green, fill=white, rotate=-45] {\Large Dév. Firmware};
+        \path (-0.5,0.5) node[text=green, fill=white, rotate=-45] {\Large \& Tests};
+      \end{scope}
+    \end{scope}
+  \end{scope}
+
+  %% Backplane & intégration
+  \begin{scope}[yshift=-9cm]
+    \draw[back] (3,3.8) rectangle (13, 5.8) node[pos=.5] {\huge\textbf{Backplane \& crate}};
+    \draw[back] (25,3.8) rectangle (28, 5.8) node[pos=.5, text width=2.5cm, align=center] {\Large\textbf{Production backplane}};
+  \end{scope}
+
+  \begin{scope}[xshift=19cm, yshift=-8.5cm]
+    \draw[red] (0,7.6) -- (0,7.2);
+    \draw[red] (0,7.6) -- (0.5,8.08);
+    \begin{scope}[yshift=-9cm, xshift=2cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=-45, text width=4cm] {\Large Construction du démonstrateur};
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[xshift=29cm, yshift=-8.5cm]
+    \draw[red] (0,7.6) -- (0,7.2);
+    \draw[red] (0,7.6) -- (0.5,8.08);
+    \begin{scope}[yshift=-9cm, xshift=2cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=-45, text width=4cm] {\Large Commissioning};
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[xshift=32cm, yshift=-8.5cm]
+    \draw[red] (0,7.6) -- (0,7.2);
+    \draw[red] (0,7.6) -- (0.5,8.08);
+    \begin{scope}[yshift=-9cm, xshift=2cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=-45, text width=4cm] {\Large\textbf{Prise de données}};
+    \end{scope}
+  \end{scope}
+
+  %% \fill[green, opacity=0.6, xshift=20cm] (8.89,7.62) rectangle (11.5,11.43) node[pos=0.5,fill=white,yshift=2.8cm] {\huge\emph{commissioning}};
+  %% \fill[red, opacity=0.6, xshift=15cm] (25.4,6.35) -- (27.94,9.525) -- (25.4,12.7) -- (25.4,6.35) -- cycle;
+  %% \fill[red, opacity=0.6, xshift=20cm] (11.5,7.62) rectangle (20.4,11.43) node[pos=0.5,text=white, opacity=1] {\Huge\textbf{Prise de données}};
+  %% \fill[blue, opacity=0.6, xshift=20cm] (3,7.62) rectangle (8.89,11.43) node[pos=0.5, text=white, text width=5cm,align=center,opacity=1] {\huge Construction du démonstrateur};
+
+  \draw[year] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2010};
+  \draw[year,xshift=5.0cm]  (0.00,3.8) -- (0.00,15.2)  node[below, xshift=2.5cm] {\LARGE 2011};
+  \draw[year,xshift=10.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2012};
+  \draw[year,xshift=15.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2013};
+  \draw[year,xshift=20.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2014};
+  \draw[year,xshift=25.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2015};
+  \draw[year,xshift=30.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2016};
+  %% \draw[year,xshift=35.0cm] (0.00,3.8) -- (0.00,15.2) node[below, xshift=2.5cm] {\LARGE 2017};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

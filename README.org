@@ -4,7 +4,7 @@
 #+DATE: <2015-01-14 mer.>
 #+OPTIONS: ^:{} toc:nil num:nil
 #+HTML_HEAD_EXTRA: <style> .tikz {position: relative; width: 500px;} </style>
-#+HTML_HEAD_EXTRA: <style> .icons {position: absolute; left: 500px; top: 0px;} </style>
+#+HTML_HEAD_EXTRA: <style> .icons {position: absolute; left: 510px; top: 0px;} </style>
 
 This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
 project.

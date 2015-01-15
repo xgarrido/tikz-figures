@@ -1,0 +1,35 @@
+\begin{tikzpicture}[y=-1cm]
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{gray}{0.5}
+  \sf
+
+  \begin{scope}[xshift=10pt]
+    \path (6,3.8) node[text=black,anchor=base west] {\footnotesize{}4};
+    \path (7,3.8) node[text=black,anchor=base west] {\footnotesize{}3};
+    \path (8,3.8) node[text=black,anchor=base west] {\footnotesize{}2};
+    \path (9,3.8) node[text=black,anchor=base west] {\footnotesize{}1};
+    \path (10,3.8) node[text=black,anchor=base west] {\footnotesize{}0};
+  \end{scope}
+
+  \path (7.8,6) node[text=cyan,anchor=base west,rotate=45.0] {\Large{}LTO};
+  \path (6.9,5.9) node[text=blue,anchor=base west,rotate=45.0] {\Large{}XT};
+  \path (9.2,6.1) node[text=red,anchor=base west,rotate=45.0] {\Large{}HTM};
+  \path (5.4,6.4) node[text=black,anchor=base west,rotate=45.0] {\Large{}SPARE};
+  \path[fill=cyan!70] (7.5,4) rectangle (8.5,5);
+  \path[fill=red!70] (8.5,4) rectangle (10.5,5);
+  \path[fill=blue!70] (6.5,4) rectangle (7.5,5);
+  \draw[dashed,black] (8.5,5) -- (8.5,4);
+  \draw[dashed,black] (9.5,5) -- (9.5,4);
+  \draw[dashed,black] (7.5,5) -- (7.5,4);
+  \draw[dashed,black] (6.5,5) -- (6.5,4);
+  \draw[black] (5.5,4) rectangle (10.5,5);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

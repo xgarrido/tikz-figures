@@ -1,0 +1,56 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{penColor}{rgb}{0.52941,0.80784,1}
+  \filldraw[penColor] (10.3,5.61111) ellipse (0.1cm and 0.09556cm);
+  \filldraw[penColor] (10.2,5.61111) rectangle (10.4,5.85556);
+  \definecolor{penColor}{rgb}{0,0.56471,0.56471}
+  \draw[semithick,penColor] (8.1,5) +(13:2.2561) arc (13:-103:2.2561);
+  \draw[penColor] (10.3,5.61336) +(-179:0.10003) arc (-179:-1:0.10003);
+  \draw[penColor] (10.25333,5.85556) -- (10.25333,6);
+  \draw[penColor] (10.35333,5.85556) -- (10.35333,6);
+  \draw[penColor] (10.4,5.61111) -- (10.4,5.90444);
+  \draw[penColor] (10.2,5.61111) -- (10.2,5.90444);
+  \draw[penColor] (10.2,5.85556) -- (10.4,5.85556);
+
+  \tikzstyle{pmma} = [draw=white!90!black,fill=white!95!black]
+  \path[pmma] (5.1,2.6) -- (7.5,2.6) -- (9,5.8) -- (3.6,5.8) -- cycle;
+
+  \definecolor{penColor}{rgb}{0.56471,0,0.56471}
+  \filldraw[penColor] (6,6.03333) rectangle (6.49556,6.2);
+  \path (4.2,6.8) node[text=penColor,anchor=base west] {\large{}$^\text{207}$Bi or $^\text{241}$Am source};
+  \definecolor{fillColor}{rgb}{0.52941,0.80784,1}
+  \tikzstyle{scin} = [draw=fillColor,fill=fillColor!60]
+  \path[scin] (3.6,5.78) rectangle (9,6.1);
+
+  %% \draw[black] (6,0.2) -- (6,-0.4);
+  %% \draw[red] (6.6,0.2) -- (6.6,-0.4);
+
+  %% \draw[<-,black] (7.8,3.2) -- (11.2,3.2);
+  %% \draw[<-,black] (10.2,4) -- (11.2,4);
+  %% \draw[<-,black] (10.4,5.7) -- (11.2,5.7);
+  %% \draw[<-,black] (9,6) -- (10.2,5) -- (11.2,5);
+  %% \draw[<-,black] (7.1,0.8) -- (11.2,0.8);
+  %% \draw[<-,black] (6.5,6.2) -- (11.2,6.2);
+
+  %% \path (5,-0.5) node[text=black,anchor=base west] {\large{}signal};
+  %% \path (6.8,-0.5) node[text=red,anchor=base] {\large{}HV};
+
+  %% \path (11.4,5.7) node[text=black,anchor=base west] {\large{}LED};
+  %% \path (11.4,4) node[text=black,anchor=base west] {\large{}Optic fiber};
+  %%\path (11.4,6.2) node[text=black,anchor=base west] {\large{}$^\text{207}$Bi or $^\text{241}$Am source};
+  %% \path (11.4,3.2) node[text=black,anchor=base west] {\large{}PMMA Light guide};
+  %% \path (11.4,0.8) node[text=black,anchor=base west] {\large{}Photomultiplier};
+  %% \path (11.4,5.02) node[text=black,anchor=base west] {\large{}Aluminized scintillator};
+
+
+  \definecolor{fillColor}{rgb}{1,0.84314,0}
+  \tikzstyle{pm} = [draw=fillColor,fill=fillColor!50]
+  \path[rounded corners=6.3bp,pm] (7,2.5) rectangle (5.6,0.2);
+  \path[pm] (6.28889,2.59111) ellipse (1.21111cm and 0.80889cm);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

@@ -1,0 +1,99 @@
+\definecolor{gray}{RGB}{85,85,85}
+\definecolor{blue}{RGB}{51,51,179}
+\definecolor{green}{RGB}{105,182,40}
+\definecolor{red}{RGB}{221,42,43}
+\begin{tikzpicture}[y=-1cm]
+  \sf
+
+  %% Tellure naturel
+  \definecolor{fillColor}{rgb}{1,0.84314,0}
+  \path[draw=black,fill=fillColor] (7.00444,4.98444) -- (-0.7,2.48222) -- (0.45556,0.22889) -- cycle;
+  \path[draw=black,fill=fillColor] (7,5) -- (15.1,5) -- (14.7,7.5) -- cycle;
+  \path (13.4,6.3) node[text=black,anchor=base] {\LARGE{}$^\text{nat}$Te};
+  \path (0.7,2.4) node[text=black,anchor=base] {\LARGE{}$^\text{nat}$Te};
+
+  %% Selenium 82
+  \path[draw=black,fill=red] (7,5) -- (0.44667,0.24) -- (2.24222,-1.54667) -- cycle;
+  \path[draw=black,fill=red] (7,5) -- (2.23778,-1.55333) -- (4.49778,-2.69778) -- cycle;
+  \path[draw=black,fill=red] (6.98667,4.92667) -- (0.46,0.23333) -- (0.07556,0.98222) -- cycle;
+  \path (2.4,0.4)  node[text=white,anchor=base] {\LARGE{}$^\text{82}$Se};
+  \path (3.8,-0.8) node[text=white,anchor=base] {\LARGE{}$^\text{82}$Se};
+
+  %% Tellure 130
+  \definecolor{fillColor}{rgb}{0.81569,0,0.81569}
+  \path[draw=black,fill=violet!90] (7,5) -- (13.55333,9.76) -- (11.75778,11.54667) -- cycle;
+  \path[draw=black,fill=violet!90] (7,5) -- (-1.1,5) -- (-0.7,2.5) -- cycle;
+  \path (11.7,9.8) node[text=white,anchor=base] {\LARGE{}$^\text{130}$Te};
+  \path (0.4,4.2)  node[text=white,anchor=base] {\LARGE{}$^\text{130}$Te};
+
+  %% Cadmium 116
+  \path[draw=black,fill=cyan] (7,5) -- (14.70444,7.50222) -- (13.54889,9.75556) -- cycle;
+  \path (12.9,8) node[text=black,anchor=base] {\LARGE{}$^\text{116}$Cd};
+
+  %% Molybdnium 100
+  \path[draw=black,fill=blue!90] (7,5) -- (13.55333,0.24) -- (11.75778,-1.54667) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (14.70444,2.49778) -- (13.54889,0.24444) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (11.76222,11.55333) -- (9.50222,12.69778) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (9.50444,12.70444) -- (7,13.09333) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (-1.1,5) -- (-0.7,7.5) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (2.23778,11.55333) -- (4.49778,12.69778) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (0.44667,9.76) -- (2.24222,11.54667) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (-0.70444,7.50222) -- (0.45111,9.75556) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (4.49556,12.70444) -- (7,13.09333) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (11.76222,-1.55333) -- (9.50222,-2.69778) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (9.50444,-2.70444) -- (7,-3.09333) -- cycle;
+  \path[draw=black,fill=blue!90] (7,5) -- (4.49556,-2.70444) -- (7,-3.09333) -- cycle;
+  \path (1,8.1)     node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (0.5,6.2)   node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (3.9,11.2)  node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (6,12.1)    node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (8.3,12.1)  node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (10.4,11.5) node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (12.8,2.3)  node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (11.7,0.5)  node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (9.9,-0.7)  node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (8,-1.5)    node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+  \path (2,9.9)     node[text=white,anchor=base] {\LARGE{}$^\text{100}$Mo};
+
+  %% Copper
+  \path[draw=black,fill=gray] (7,5) -- (15.1,5) -- (14.7,2.5) -- cycle;
+  \path (13.5,4.1) node[text=white,anchor=base] {\LARGE{}Cu};
+
+  %% Calcium 48
+  \definecolor{fillColor}{rgb}{0,0.81569,0}
+  \path[draw=black,fill=green] (4.5,-2.7) -- (5.7,-2.9) -- (7,5.1) -- cycle;
+  \path (0.5,-3.1) node[text=black,anchor=base east] {\LARGE{}$^\text{48}$Ca};
+  \path (0.5,-2.3) node[text=black,anchor=base east] {\LARGE{}$^\text{150}$Nd};
+  \path (0.5,-1.5) node[text=black,anchor=base east] {\LARGE{}$^\text{96}$Zr};
+
+  \path (8.3,13.5) node[text=black,anchor=base] {\large{}15};
+  \path (10.8,12.8) node[text=black,anchor=base] {\large{}16};
+  \path (13,11.3) node[text=black,anchor=base] {\large{}17};
+  \path (14.6,9.1) node[text=black,anchor=base] {\large{}18};
+  \path (15.4,6.6) node[text=black,anchor=base] {\large{}19};
+  \path (15.4,3.7) node[text=black,anchor=base] {\large{}0};
+  \path (14.5,1.1) node[text=black,anchor=base] {\large{}1};
+  \path (12.9,-1) node[text=black,anchor=base] {\large{}2};
+  \path (10.8,-2.5) node[text=black,anchor=base] {\large{}3};
+  \path (8.4,-3.3) node[text=black,anchor=base] {\large{}4};
+  \path (5.6,-3.3) node[text=black,anchor=base] {\large{}5};
+  \path (3,-2.6) node[text=black,anchor=base] {\large{}6};
+  \path (0.9,-0.9) node[text=black,anchor=base] {\large{}7};
+  \path (-0.6,1.2) node[text=black,anchor=base] {\large{}8};
+  \path (-1.4,3.8) node[text=black,anchor=base] {\large{}9};
+  \path (-1.5,6.5) node[text=black,anchor=base] {\large{}10};
+  \path (-0.6,9.1) node[text=black,anchor=base] {\large{}11};
+  \path (0.9,11.2) node[text=black,anchor=base] {\large{}12};
+  \path (3,12.7) node[text=black,anchor=base] {\large{}13};
+  \path (5.6,13.5) node[text=black,anchor=base] {\large{}14};
+  \path[draw=black,fill=white] (7,5) circle (1.94222cm);
+  \draw[black] (0.7,-3.2) -- (4.9,-3.2) -- (5.6,-0.5);
+  \draw[black] (0.7,-2.4) -- (5.1,-2.4);
+  \draw[black] (0.7,-1.7) -- (5.3,-1.7);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

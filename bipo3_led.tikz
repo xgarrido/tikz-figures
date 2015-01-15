@@ -1,0 +1,111 @@
+\begin{tikzpicture}[y=-1cm]
+\sf
+
+\clip (2,1) rectangle (25,9);
+
+%% bipo3 tank
+\draw[rounded corners=6.3bp,black] (6.97778,7.01333) rectangle (3.57778,1.51333);
+\draw[rounded corners=6.3bp,black] (11.61333,7.01778) rectangle (8.21333,1.51778);
+\draw[rounded corners=6.3bp,black] (15.01333,7.01778) rectangle (11.61333,1.51778);
+\draw[rounded corners=6.3bp,black] (15.17,7.1) rectangle (3.4,1.4);
+
+
+%% source foil
+%% \definecolor{penColor}{rgb}{0,0.81569,0}
+%% \filldraw[penColor] (8.41333,4.21778) rectangle (11.41333,4.31778);
+%% \filldraw[penColor] (11.81333,4.21778) rectangle (14.81333,4.31778);
+%% \filldraw[penColor] (3.77778,4.21333) rectangle (6.77778,4.31333);
+
+%% Optic fibers
+\definecolor{penColor}{rgb}{0,0.6902,0.6902}
+\draw[penColor] (15.38983,5.28568) +(-13:2.67507) arc (-13:-121:2.67507);
+\draw[penColor] (17.35,11.85) +(-85:7.17948) arc (-85:-118:7.17948);
+\draw[penColor] (13.72792,6.34024) +(-21:4.57615) arc (-21:-133:4.57615);
+\draw[penColor] (10.31232,15.76304) +(-55:13.47187) arc (-55:-109:13.47187);
+\draw[penColor] (10.47039,-17.27913) +(71:23.2331) arc (71:101:23.2331);
+\draw[penColor] (0.64546,-121.20455) +(82:127.09499) arc (82:86:127.09499);
+\draw[penColor] (20.53636,3.65909) +(158:2.74165) arc (158:89:2.74165);
+
+
+%% scintillators
+\definecolor{fillColor}{rgb}{0.52941,0.80784,1}
+\tikzstyle{scin} = [draw=fillColor,fill=fillColor!60]
+\path[scin] (8.41333,4.01778) rectangle (11.41333,4.21778);
+\path[scin] (14.8,4.5) rectangle (11.8,4.3);
+\path[scin] (11.8,4) rectangle (14.8,4.2);
+\path[scin] (11.41333,4.51778) rectangle (8.41333,4.31778);
+\path[scin] (6.78444,4.52667) rectangle (3.78444,4.32667);
+\path[scin] (19.8,7.4) rectangle (22.8,7.6);
+\path[scin] (3.78667,4.01333) rectangle (6.78667,4.21333);
+
+%% Light guide
+\tikzstyle{pmma} = [draw=white!90!black,fill=white!95!black]
+\path[pmma] (8.41333,4.01778) -- (9.31333,2.91778) -- (10.51333,2.91778) -- (11.41333,4.01778) -- cycle;
+\path[pmma] (6.78444,4.52667) -- (5.88444,5.62667) -- (4.68444,5.62667) -- (3.78444,4.52667) -- cycle;
+\path[pmma] (3.78667,4.01333) -- (4.68667,2.91333) -- (5.88667,2.91333) -- (6.78667,4.01333) -- cycle;
+\path[pmma] (19.8,7.4) -- (20.7,6.3) -- (21.9,6.3) -- (22.8,7.4) -- cycle;
+\path[pmma] (14.8,4.5) -- (13.9,5.6) -- (12.7,5.6) -- (11.8,4.5) -- cycle;
+\path[pmma] (11.8,4) -- (12.7,2.9) -- (13.9,2.9) -- (14.8,4) -- cycle;
+\path[pmma] (11.41333,4.51778) -- (10.51333,5.61778) -- (9.31333,5.61778) -- (8.41333,4.51778) -- cycle;
+
+%% LED
+\definecolor{penColor}{rgb}{0.52941,0.80784,1}
+\filldraw[penColor] (18.31778,4.67333) ellipse (0.13333cm and 0.12667cm);
+\filldraw[penColor] (18.31778,4.80667) rectangle (18.57111,4.54222);
+\definecolor{penColor}{rgb}{0,0.6902,0.6902}
+\draw[penColor] (18.56444,4.63111) -- (18.82444,4.63111);
+\draw[penColor] (18.56444,4.72) -- (18.82444,4.72);
+\path (17.9,4.1) node[text=penColor,anchor=base west] {\large{} LED device};
+
+
+%% dots
+\filldraw[black] (7.6,4.2) circle (0.05556cm);
+\filldraw[black] (8,4.2) circle (0.05556cm);
+\filldraw[black] (7.2,4.2) circle (0.05556cm);
+
+
+
+%% \draw[arrows=-to,black] (21.2,3.3) -- (21.2,4.9);
+%% \draw[black] (21.3,2.8) -- (21.5,2.7);
+%% \draw[black] (22,2.8) -- (22.2,2.7);
+
+%% source
+\definecolor{penColor}{rgb}{0.56471,0,0.56471}
+\filldraw[penColor] (21.1,7.6) rectangle (21.5,7.7);
+\draw[arrows=triangle 45-,penColor] (21.5,7.7) -- (22.1,8);
+
+\definecolor{textColor}{rgb}{0.56471,0,0.56471}
+\path (22.2,8.2) node[text=textColor,anchor=base west] {\large{}Source};
+\path (19.9,8.8) node[text=black,anchor=base west] {\large{} Reference PMT};
+
+%% PMT
+\definecolor{fillColor}{rgb}{1,0.84314,0}
+\tikzstyle{pm_base} = [rounded corners=6.3bp,draw=fillColor,fill=fillColor!50]
+\path[pm_base] (12.9,5.7) rectangle (13.7,6.8);
+\path[pm_base] (13.7,2.8) rectangle (12.9,1.7);
+\path[pm_base] (9.51333,5.71778) rectangle (10.31333,6.81778);
+\path[pm_base] (10.31333,2.81778) rectangle (9.51333,1.71778);
+\path[pm_base] (4.88444,5.72667) rectangle (5.68444,6.82667);
+\path[pm_base] (5.68667,2.81333) rectangle (4.88667,1.71333);
+\path[pm_base] (21.7,6.2) rectangle (20.9,5.1);
+\tikzstyle{pm} = [draw=fillColor,fill=fillColor!50]
+\path[pm] (13.31111,5.60889) ellipse (0.6cm and 0.4cm);
+\path[pm] (13.28889,2.89111) ellipse (0.6cm and 0.4cm);
+\path[pm] (9.92444,5.62667) ellipse (0.6cm and 0.4cm);
+\path[pm] (9.90222,2.90889) ellipse (0.6cm and 0.4cm);
+\path[pm] (5.29556,5.63556) ellipse (0.6cm and 0.4cm);
+\path[pm] (5.27556,2.90444) ellipse (0.6cm and 0.4cm);
+\path[pm] (21.28889,6.29111) ellipse (0.6cm and 0.4cm);
+
+%% \definecolor{penColor}{rgb}{0,0.6902,0.6902}
+%% \draw[penColor] (18.32222,4.67333) +(92:0.13341) arc (92:268:0.13341);
+%% \draw[penColor] (18.69778,4.54222) -- (18.31778,4.54222);
+%% \draw[penColor] (18.57111,4.80667) -- (18.57111,4.54222);
+%% \draw[penColor] (18.69778,4.80667) -- (18.31778,4.80667);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

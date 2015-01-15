@@ -1,0 +1,128 @@
+\begin{tikzpicture}[y=-1cm]
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{gray}{0.5}
+  \sf
+  \path (8.2,3.9) node[text=black,anchor=base west] {\footnotesize{}0};
+  \path (7.7,3.9) node[text=black,anchor=base west] {\footnotesize{}1};
+  \path (7.2,3.9) node[text=black,anchor=base west] {\footnotesize{}2};
+  \path (6.7,3.9) node[text=black,anchor=base west] {\footnotesize{}3};
+  \path (6.2,3.9) node[text=black,anchor=base west] {\footnotesize{}4};
+  \path (11.2,3.9) node[text=black,anchor=base west] {\footnotesize{}0};
+  \path (10.7,3.9) node[text=black,anchor=base west] {\footnotesize{}1};
+  \path (10.2,3.9) node[text=black,anchor=base west] {\footnotesize{}2};
+  \path (9.7,3.9) node[text=black,anchor=base west] {\footnotesize{}3};
+  \path (9.2,3.9) node[text=black,anchor=base west] {\footnotesize{}4};
+  \path (14.2,3.9) node[text=black,anchor=base west] {\footnotesize{}0};
+  \path (13.7,3.9) node[text=black,anchor=base west] {\footnotesize{}1};
+  \path (13.2,3.9) node[text=black,anchor=base west] {\footnotesize{}2};
+  \path (12.7,3.9) node[text=black,anchor=base west] {\footnotesize{}3};
+  \path (12.2,3.9) node[text=black,anchor=base west] {\footnotesize{}4};
+  \path (17.2,3.9) node[text=black,anchor=base west] {\footnotesize{}0};
+  \path (16.7,3.9) node[text=black,anchor=base west] {\footnotesize{}1};
+  \path (16.2,3.9) node[text=black,anchor=base west] {\footnotesize{}2};
+  \path (15.7,3.9) node[text=black,anchor=base west] {\footnotesize{}3};
+  \path (15.2,3.9) node[text=black,anchor=base west] {\footnotesize{}4};
+  \path (18.1,4.3) node[text=black,anchor=base west] {\Large{}.....};
+
+  \begin{scope}[xshift=8pt]
+    \path (19.5,7.8) node[text=black,anchor=base west] {\footnotesize{}4};
+    \path (20.5,7.8) node[text=black,anchor=base west] {\footnotesize{}3};
+    \path (21.5,7.8) node[text=black,anchor=base west] {\footnotesize{}2};
+    \path (22.5,7.8) node[text=black,anchor=base west] {\footnotesize{}1};
+    \path (23.5,7.8) node[text=black,anchor=base west] {\footnotesize{}0};
+    \path (15.5,7.8) node[text=black,anchor=base west] {\footnotesize{}8};
+    \path (13.5,7.8) node[text=black,anchor=base west] {\footnotesize{}10};
+    \path (12.5,7.8) node[text=black,anchor=base west] {\footnotesize{}11};
+    \path (11.5,7.8) node[text=black,anchor=base west] {\footnotesize{}12};
+    \path (18.5,7.8) node[text=black,anchor=base west] {\footnotesize{}5};
+    \path (17.5,7.8) node[text=black,anchor=base west] {\footnotesize{}6};
+    \path (16.5,7.8) node[text=black,anchor=base west] {\footnotesize{}7};
+    \path (9.5,7.8) node[text=black,anchor=base west] {\footnotesize{}14};
+    \path (8.5,7.8) node[text=black,anchor=base west] {\footnotesize{}15};
+    \path (7.5,7.8) node[text=black,anchor=base west] {\footnotesize{}16};
+    \path (6.5,7.8) node[text=black,anchor=base west] {\footnotesize{}17};
+    \path (10.5,7.8) node[text=black,anchor=base west] {\footnotesize{}13};
+    \path (14.5,7.8) node[text=black,anchor=base west] {\footnotesize{}9};
+  \end{scope}
+
+  \path (23.7,4.5) node[text=black,anchor=base] {\fontsize{16.0}{19.2}\selectfont{}20 Calorimeter FEB / 1 Control Board};
+
+  \path[fill=red!70] (7.5,4) rectangle (8.5,4.5);
+  \path[fill=red!70] (10.5,4) rectangle (11.5,4.5);
+  \path[fill=red!70] (13.5,4) rectangle (14.5,4.5);
+  \path[fill=red!70] (16.5,4) rectangle (17.5,4.5);
+  \path[fill=red!70] (22,8) rectangle (24,9);
+  \path[fill=cyan!70] (7,4) rectangle (7.5,4.5);
+  \path[fill=cyan!70] (10,4) rectangle (10.5,4.5);
+  \path[fill=cyan!70] (13,4) rectangle (13.5,4.5);
+  \path[fill=cyan!70] (16,4) rectangle (16.5,4.5);
+  \path[fill=cyan!70] (11,8) rectangle (12,9);
+  \path[fill=blue!70] (12.5,4) rectangle (13,4.5);
+  \path[fill=blue!70] (6.5,4) rectangle (7,4.5);
+  \path[fill=blue!70] (9.5,4) rectangle (10,4.5);
+  \path[fill=blue!70] (15.5,4) rectangle (16,4.5);
+  \path[fill=blue!70] (10,8) rectangle (11,9);
+  \path[fill=green!70] (12,8) rectangle (22,9);
+
+  \draw[dashed,black] (7.5,4.5) -- (7.5,4);
+  \draw[dashed,black] (8,4.5) -- (8,4);
+  \draw[dashed,black] (7,4.5) -- (7,4);
+  \draw[dashed,black] (6.5,4.5) -- (6.5,4);
+  \draw[black] (6,4) rectangle (8.5,4.5);
+  \draw[dashed,black] (10.5,4.5) -- (10.5,4);
+  \draw[dashed,black] (11,4.5) -- (11,4);
+  \draw[dashed,black] (10,4.5) -- (10,4);
+  \draw[dashed,black] (9.5,4.5) -- (9.5,4);
+  \draw[black] (9,4) rectangle (11.5,4.5);
+  \draw[dashed,black] (13.5,4.5) -- (13.5,4);
+  \draw[dashed,black] (14,4.5) -- (14,4);
+  \draw[dashed,black] (13,4.5) -- (13,4);
+  \draw[dashed,black] (12.5,4.5) -- (12.5,4);
+  \draw[black] (12,4) rectangle (14.5,4.5);
+  \draw[dashed,black] (16.5,4.5) -- (16.5,4);
+  \draw[dashed,black] (17,4.5) -- (17,4);
+  \draw[dashed,black] (16,4.5) -- (16,4);
+  \draw[dashed,black] (15.5,4.5) -- (15.5,4);
+  \draw[black] (15,4) rectangle (17.5,4.5);
+  \draw[dashed,black] (7,8) -- (7,9);
+  \draw[dashed,black] (8,8) -- (8,9);
+  \draw[dashed,black] (9,8) -- (9,9);
+  \draw[dashed,black] (10,8) -- (10,9);
+  \draw[dashed,black] (11,8) -- (11,9);
+  \draw[dashed,black] (12,8) -- (12,9);
+  \draw[dashed,black] (13,8) -- (13,9);
+  \draw[dashed,black] (14,8) -- (14,9);
+  \draw[dashed,black] (15,8) -- (15,9);
+  \draw[dashed,black] (16,8) -- (16,9);
+  \draw[dashed,black] (17,8) -- (17,9);
+  \draw[dashed,black] (18,8) -- (18,9);
+  \draw[dashed,black] (19,8) -- (19,9);
+  \draw[dashed,black] (20,8) -- (20,9);
+  \draw[dashed,black] (22,8) -- (22,9);
+  \draw[dashed,black] (21,8) -- (21,9);
+  \draw[dashed,black] (23,8) -- (23,9);
+  \draw[black] (6,8) rectangle (24,9);
+
+
+  \path (8.4,10.1) node[text=black,anchor=base east,rotate=45.0] {\Large{}CONTROL};
+  \path (10.8,10.3) node[text=blue,anchor=base east,rotate=45.0] {\Large{}XT-PC};
+  \path (11.8,10.3) node[text=cyan,anchor=base east,rotate=45.0] {\Large{}LTO-PC};
+  \path (23.3,10.3) node[text=red,anchor=base east,rotate=45.0] {\Large{}HTM-PC};
+  \path (17.3,10.4) node[text=green,anchor=base east,rotate=45.0] {\Large{}W-ZW};
+  \path (12,9.5)    node[text=green,anchor=base west] {\large{}0.9};
+  \path (12,9.9)    node[text=green,anchor=base west] {\large{}1.9};
+  \path (17,9.7)    node[text=green,anchor=base west] {\large{}zone};
+  \path (22,9.5)    node[text=green,anchor=base east] {\large{}0.0};
+  \path (22,9.9)    node[text=green,anchor=base east] {\large{}1.0};
+
+
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

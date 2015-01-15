@@ -1,0 +1,168 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+
+  \path[fill=white] (0,27.94) rectangle (20.0025,14.3764);
+  \path[fill=white] (2.39818,26.30805) rectangle (17.60432,15.46013);
+  \path[fill=white] (2.39818,26.30805) rectangle (17.60432,15.46013);
+
+  %%  \draw[semithick,black] (2.39818,26.30805) rectangle (17.60432,15.46013);
+%%  \draw[semithick,black] (2.39818,26.30805) -- (17.60432,26.30805);
+
+
+  \path (7.41468,27.48068) node[text=black,anchor=base west] {\huge{} $m_{\beta\beta}$ limit in eV (90\% C.L.)};
+
+  \path (2.05528,26.82452) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}0.1};
+  \path (4.30953,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}0.2};
+  \path (5.63245,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}0.3};
+  \path (6.58072,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}0.4};
+  \path (9.8679,26.82452) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}1};
+  \path (12.12638,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}2};
+  \path (13.47682,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}3};
+  \path (14.42508,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}4};
+  \path (15.14263,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}5};
+  \path (15.748,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}6};
+  \path (16.26447,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}7};
+  \path (16.69627,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}8};
+  \path (17.09843,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}9};
+  \path (17.42703,26.82028) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}10};
+
+
+  \tikzstyle{grid_line}=[semithick, dotted, gray]
+
+  %% vertical lines
+  \draw[grid_line] (2.39818,17.33973) -- (17.60432,17.33973);
+  \draw[grid_line] (2.39818,18.6182) -- (17.60432,18.6182);
+  \draw[grid_line] (2.39818,19.89667) -- (17.60432,19.89667);
+  \draw[grid_line] (2.39818,21.1836) -- (17.60432,21.1836);
+  \draw[grid_line] (2.39818,22.46418) -- (17.60432,22.46418);
+  \draw[grid_line] (2.39818,23.75112) -- (17.60432,23.75112);
+  \draw[grid_line] (2.39818,25.02958) -- (17.60432,25.02958);
+
+  %% horizonthal lines
+  \draw[grid_line] (6.02403,15.46013) -- (6.02403,26.30805);
+  \draw[grid_line] (4.69265,15.46013) -- (4.69265,26.30805);
+  \draw[grid_line] (6.97653,15.46013) -- (6.97653,26.30805);
+  \draw[grid_line] (7.7089,15.46013) -- (7.7089,26.30805);
+  \draw[grid_line] (8.31638,15.46013) -- (8.31638,26.30805);
+  \draw[grid_line] (8.82015,15.46013) -- (8.82015,26.30805);
+  \draw[grid_line] (9.26042,15.46013) -- (9.26042,26.30805);
+  \draw[grid_line] (9.64777,15.46013) -- (9.64777,26.30805);
+  \draw[grid_line] (10.00125,15.46013) -- (10.00125,26.30805);
+  \draw[grid_line] (12.28513,15.46013) -- (12.28513,26.30805);
+  \draw[grid_line] (13.62498,15.46013) -- (13.62498,26.30805);
+  \draw[grid_line] (14.57748,15.46013) -- (14.57748,26.30805);
+  \draw[grid_line] (15.30985,15.46013) -- (15.30985,26.30805);
+  \draw[grid_line] (15.91098,15.46013) -- (15.91098,26.30805);
+  \draw[grid_line] (16.4211,15.46013) -- (16.4211,26.30805);
+  \draw[grid_line] (16.86348,15.46013) -- (16.86348,26.30805);
+  \draw[grid_line] (17.25083,15.46013) -- (17.25083,26.30805);
+  \draw[grid_line] (17.60432,15.46013) -- (17.60432,26.30805);
+
+  %% frame rectangle
+  \draw[semithick,black] (2.39818,26.30805) rectangle (17.60432,15.46013);
+
+  %% ticks
+  \draw[semithick,black] (6.02403,26.2636)   -- (6.02403,26.30805);
+  \draw[semithick,black] (4.69265,26.2636)   -- (4.69265,26.30805);
+  \draw[semithick,black] (7.7089,26.2636)    -- (7.7089,26.30805);
+  \draw[semithick,black] (8.31638,26.2636)   -- (8.31638,26.30805);
+  \draw[semithick,black] (8.82015,26.2636)   -- (8.82015,26.30805);
+  \draw[semithick,black] (9.26042,26.2636)   -- (9.26042,26.30805);
+  \draw[semithick,black] (9.64777,26.2636)   -- (9.64777,26.30805);
+  \draw[semithick,black] (10.00125,26.21068) -- (10.00125,26.30805);
+  \draw[semithick,black] (12.28513,26.2636)  -- (12.28513,26.30805);
+  \draw[semithick,black] (13.62498,26.2636)  -- (13.62498,26.30805);
+  \draw[semithick,black] (14.57748,26.2636)  -- (14.57748,26.30805);
+  \draw[semithick,black] (15.30985,26.2636)  -- (15.30985,26.30805);
+  \draw[semithick,black] (15.91098,26.2636)  -- (15.91098,26.30805);
+  \draw[semithick,black] (16.4211,26.2636)   -- (16.4211,26.30805);
+  \draw[semithick,black] (16.86348,26.2636)  -- (16.86348,26.30805);
+  \draw[semithick,black] (17.25083,26.2636)  -- (17.25083,26.30805);
+  \draw[semithick,black] (17.60432,26.21068) -- (17.60432,26.30805);
+  \draw[semithick,black] (6.97653,26.2636)   -- (6.97653,26.30805);
+
+  \draw[semithick,black] (2.39818,15.56597)  -- (2.39818,15.46013);
+  \draw[semithick,black] (4.69265,15.51305)  -- (4.69265,15.46013);
+  \draw[semithick,black] (6.02403,15.51305)  -- (6.02403,15.46013);
+  \draw[semithick,black] (6.97653,15.51305)  -- (6.97653,15.46013);
+  \draw[semithick,black] (7.7089,15.51305)   -- (7.7089,15.46013);
+  \draw[semithick,black] (8.31638,15.51305)  -- (8.31638,15.46013);
+  \draw[semithick,black] (8.82015,15.51305)  -- (8.82015,15.46013);
+  \draw[semithick,black] (9.26042,15.51305)  -- (9.26042,15.46013);
+  \draw[semithick,black] (9.64777,15.51305)  -- (9.64777,15.46013);
+  \draw[semithick,black] (10.00125,15.56597) -- (10.00125,15.46013);
+  \draw[semithick,black] (12.28513,15.51305) -- (12.28513,15.46013);
+  \draw[semithick,black] (13.62498,15.51305) -- (13.62498,15.46013);
+  \draw[semithick,black] (14.57748,15.51305) -- (14.57748,15.46013);
+  \draw[semithick,black] (15.30985,15.51305) -- (15.30985,15.46013);
+  \draw[semithick,black] (15.91098,15.51305) -- (15.91098,15.46013);
+  \draw[semithick,black] (16.4211,15.51305)  -- (16.4211,15.46013);
+  \draw[semithick,black] (16.86348,15.51305) -- (16.86348,15.46013);
+  \draw[semithick,black] (17.25083,15.51305) -- (17.25083,15.46013);
+  \draw[semithick,black] (17.60432,15.56597) -- (17.60432,15.46013);
+
+
+  \tikzstyle{mass_limit}=[fill opacity=0.9]
+  \tikzstyle{limit}=[fill opacity=0.3]
+
+  \path[mass_limit, fill=red] (5.55625,25.52277)  rectangle (8.58097,25.02958);
+  \path[mass_limit, fill=red] (10.03723,24.2443)  rectangle (12.71693,23.75112);
+  \path[mass_limit, fill=red] (7.77875,22.95737)  rectangle (10.13248,22.46418);
+  \path[mass_limit, fill=red] (11.2268,21.6789)   rectangle (13.7668,21.1836);
+  \path[mass_limit, fill=red] (6.4389,20.38985)   rectangle (8.52805,19.89667);
+  \path[mass_limit, fill=red] (10.89237,19.11138) rectangle (13.78373,18.6182);
+
+  \path[limit, fill=red] (8.58097,25.52277)  rectangle (17.60432,25.02958);
+  \path[limit, fill=red] (12.71693,24.2443)  rectangle (17.60432,23.75112);
+  \path[limit, fill=red] (10.13248,22.95737) rectangle (17.60432,22.46418);
+  \path[limit, fill=red] (13.7668,21.6789)   rectangle (17.60432,21.1836);
+  \path[limit, fill=red] (8.52805,20.38985)  rectangle (17.60432,19.89667);
+  \path[limit, fill=red] (13.78373,19.11138) rectangle (17.60432,18.6182);
+
+  \path[mass_limit, fill=blue] (7.90152,25.02958)  rectangle (8.52805,24.5364);
+  \path[mass_limit, fill=blue] (12.18777,23.75112) rectangle (12.83123,23.25793);
+  \path[mass_limit, fill=blue] (7.9629,19.89667)   rectangle (8.73125,19.41195);
+  \path[mass_limit, fill=blue] (11.69458,18.6182)  rectangle (12.45235,18.12502);
+
+  \path[limit, fill=blue] (8.52805,25.02958)  rectangle (17.60432,24.5364);
+  \path[limit, fill=blue] (12.83123,23.75112) rectangle (17.60432,23.25793);
+  \path[limit, fill=blue] (8.73125,19.89667)  rectangle (17.60432,19.41195);
+  \path[limit, fill=blue] (12.45235,18.6182)  rectangle (17.60432,18.12502);
+
+  %% green
+  \path[mass_limit, fill=green] (13.51068,16.84443) rectangle (15.38182,16.35125);
+  \path[limit, fill=green] (15.38182,16.84443) rectangle (17.60432,16.35125);
+
+  %% Legend
+  %% \path (17.41468,25.45) node[text=white,anchor=base east] {\large QRPA (\v{S}imkovic et al., 2008)};
+  %% \path (17.41468,24.9) node[text=white,anchor=base east] {\large Shell Model (Caurier et al., 2008)};
+
+  \path (17.7,15) node[anchor=base east] {\large \textcolor{red}{QRPA (\v{S}imkovic et al., 2008)} \textcolor{green}{IBM-2 (Barea \& Iachello, 2009)} \textcolor{blue}{SM (Caurier et al., 2008)}};
+
+  \path (17.6,25.15) node[text=black,anchor=base west] {\Large H-M \& IGEX};
+  \path (17.6,23.90) node[text=black,anchor=base west] {\Large NEMO3};
+  \path (17.6,22.60) node[text=black,anchor=base west] {\Large NEMO3};
+  \path (17.6,21.30) node[text=black,anchor=base west] {\Large Solotvina};
+  \path (17.6,20.05) node[text=black,anchor=base west] {\Large CUORICINO};
+  \path (17.6,18.76) node[text=black,anchor=base west] {\Large TPC Gothard};
+  \path (17.6,17.48) node[text=black,anchor=base west] {\Large NEMO3};
+
+  \path (2,25.15) node[text=black,anchor=base east] {\Large $^\text{76}$Ge};
+  \path (2,23.90) node[text=black,anchor=base east] {\Large $^\text{82}$Se};
+  \path (2,22.60) node[text=black,anchor=base east] {\Large $^\text{100}$Mo};
+  \path (2,21.30) node[text=black,anchor=base east] {\Large $^\text{116}$Cd};
+  \path (2,20.05) node[text=black,anchor=base east] {\Large $^\text{130}$Te};
+  \path (2,18.76) node[text=black,anchor=base east] {\Large $^\text{136}$Xe};
+  \path (2,17.48) node[text=black,anchor=base east] {\Large $^\text{150}$Nd};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

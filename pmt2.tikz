@@ -1,0 +1,17 @@
+
+\begin{tikzpicture}[]
+  \draw (0,0) circle (2);
+  \draw[color=red,fill=red!20] (-1,0.4) rectangle (1,0.6);
+  \draw[color=gray!20,fill=gray!20] (-1,-0.4) rectangle (1,-0.6);
+  \path (0, 1) node[] {\normalsize{1$^\text{st.}$ dynode up}};
+  \path (0, -1) node[] {\normalsize{2$^\text{nd.}$ dynode}};
+  %% \draw[thick,->] (1,-1) to (0.15, 0);
+  \path (2,2.) node[] {\huge{$\uparrow$}\large{$\vec{B}$}};  
+  \path (0,-2.5) node[text=red] {\large{PMT Front View}};  
+\end{tikzpicture}
+
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

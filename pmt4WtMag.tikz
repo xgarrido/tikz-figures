@@ -1,0 +1,73 @@
+%% Boxes
+%% \tikzstyle{mybox} = [draw=red, fill=red!2, thick,
+%%   rectangle, rounded corners, inner sep=10pt, inner ysep=20pt,
+%%   text width=0.9\textwidth, text height=0.3\textheight]
+%% \tikzstyle{fancytitle} =[fill=red!90, text=white, rectangle, rounded corners]
+
+%% \begin{tikzpicture}
+%%   \draw[] node [mybox] (box) {};
+%%   \node[fancytitle] at (box.north) {\Dsize{Dynodes parallel to $\vec{B}$}};
+%% \end{tikzpicture}
+
+%% \vspace{-5.5cm}
+%% \hspace{1.5cm}
+%% \begin{tikzpicture}[]
+%%   \draw (0,0) circle (2);
+%%   \draw[fill=gray!20] (-0.15,-1) rectangle (0.15,1);
+%%   \path (2, -1) node[] {\normalsize{1$^\text{st.}$ dynode}};
+%%   \draw[thick,->] (1,-1) to (0.15, 0);
+%%   \path (2,2.) node[] {\huge{$\uparrow$}\large{$\vec{B}$}};  
+%%   \path (0,-2.5) node[text=red] {\large{Front view}};  
+%% \end{tikzpicture}
+
+%% \vspace{-5.3cm}
+%% \hspace{10.5cm}
+\begin{tikzpicture}[
+    %% reverse view
+    y=-1cm,
+    scale=1.3,
+    rotate=90,
+    %% style def.
+    electron/.style={blue},
+    electron multi/.style={blue,style=ultra thin,top color=blue},
+    dynode/.style={thick, black, line width=2.5},
+    pmt/.style={thick, gray},
+    mag/.style={color=gray!10, thick}
+  ]
+
+  %% Magnetic lines
+  \foreach \i in {0,0.2,...,4}
+  \draw[mag] (9,3+\i) -- (14.8,3+\i);
+
+  %% PMT shape
+  \draw[pmt] (10.7,4.4) +(-103:0.92195) arc (-103:-13:0.92195);
+  \draw[pmt] (10.73684,5.6579) +(106:0.87478) arc (106:9:0.87478);
+  \draw[pmt] (11.6,4.2) -- (13.5,4.2);
+  \draw[pmt] (11.6,5.8) -- (13.5,5.8);%% -- (14,5.8) -- (11.6,5.8);
+  \draw[pmt,dashed] (13.6,5.8) -- (14.3,5.8);
+  \draw[pmt,dashed] (13.6,4.2) -- (14.3,4.2);
+
+  %% Photo-cathode
+  \definecolor{penColor}{rgb}{1,0.84314,0}
+  \draw[pmt] (11.125,5) +(-113:1.625) arc (-113:-247:1.625);
+
+  %% Electron multiplication
+  \draw[decorate, decoration={coil,segment length=2mm,amplitude=1mm},->,blue] (9.6,4.4) -- (11.9,4.4);
+  
+  %% Dynode
+  \draw[dynode] (12.1,4.7) -- (12.7,4.4);
+  \draw[dynode,xshift=0.9cm] (12.1,4.7) -- (12.7,4.4);
+  \draw[dynode] (11.62,5.64) -- (12.22,5.34);
+  \draw[dynode,xshift=0.9cm] (11.62,5.64) -- (12.22,5.34);
+  \draw[dynode,xshift=1.8cm] (11.62,5.64) -- (12.22,5.34);
+
+  %% Text
+  \path (10.0,4.7) node[text=blue] {\normalsize{$e_\text{pc.}^-$}};
+  \path (12.2,3.5) node[] {\huge{$\uparrow$}\large{$\vec{B}$}};  
+  \path (15.,5) node[] {\large{With Magnetic Field}};  
+\end{tikzpicture}
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

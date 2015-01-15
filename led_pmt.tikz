@@ -1,0 +1,27 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \clip (3.5,0) rectangle (8.9, 4);
+
+  \definecolor{penColor}{rgb}{0.52941,0.80784,1}
+  \filldraw[penColor] (6.3,3.61111) ellipse (0.1cm and 0.09556cm);
+  \filldraw[penColor] (6.2,3.61111) rectangle (6.4,3.85556);
+
+  \definecolor{penColor}{rgb}{0,0.56471,0.56471}
+  \draw[penColor] (6.3,3.61336) +(-179:0.10003) arc (-179:-1:0.10003);
+  \draw[penColor] (6.25333,3.85556) -- (6.25333,4);
+  \draw[penColor] (6.35333,3.85556) -- (6.35333,4);
+  \draw[penColor] (6.4,3.61111) -- (6.4,3.90444);
+  \draw[penColor] (6.2,3.61111) -- (6.2,3.90444);
+  \draw[penColor] (6.2,3.85556) -- (6.4,3.85556);
+
+  \definecolor{fillColor}{rgb}{1,0.84314,0}
+  \tikzstyle{pm} = [draw=fillColor,fill=fillColor!50]
+  \path[rounded corners=6.3bp,pm] (7,2.5) rectangle (5.6,0.2);
+  \path[pm] (6.28889,2.59111) ellipse (1.21111cm and 0.80889cm);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

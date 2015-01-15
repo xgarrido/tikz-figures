@@ -1,0 +1,30 @@
+\begin{tikzpicture}[y=-1cm]
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{gray}{0.5}
+  \sf
+  \path[draw=black,fill=white] (1.8,2) rectangle (11.8,11.6);
+  \path[draw=black,fill=green!70] (3.2,3.3) rectangle (4.3,5.4);
+  \path[draw=black,fill=green!70] (3.2,8.2) rectangle (4.3,10.3);
+  \path[draw=black,fill=white!75!black] (7.8,5.9) rectangle (9.9,7.9);
+  \path[draw=black,fill=white!50!black] (1.5,2.6) rectangle (1.9,6.2);
+  \path[draw=black,fill=white!50!black] (1.5,7.4) rectangle (1.9,11);
+  \path[draw=black,fill=white!50!black] (11.5,8.2) rectangle (12.4,10);
+  \path (3.9,4.4) node[text=black,anchor=base,rotate=90.0] {\large{}FEAST0};
+  \path (3.9,9.2) node[text=black,anchor=base,rotate=90.0] {\large{}FEAST1};
+  \path (8.8,7) node[text=black,anchor=base] {\large{}FPGA};
+  \path (1.3,11) node[text=black,anchor=base east] {107};
+  \path (1.3,7.6) node[text=black,anchor=base east] {54};
+  \path (1.3,6.2) node[text=black,anchor=base east] {53};
+  \path (1.3,2.8) node[text=black,anchor=base east] {0};
+  \path (0.4,6.8) node[text=black,anchor=base,rotate=90.0] {\large{}High density connectors};
+  \path (12.8,9.1) node[text=black,anchor=base,rotate=270.0] {\large{}Backplane connector};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

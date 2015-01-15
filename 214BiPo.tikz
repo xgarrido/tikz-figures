@@ -1,0 +1,42 @@
+\begin{tikzpicture}[node distance=0.7cm,->,>=stealth',shorten >=0pt]
+  \tikzstyle{abstract}=[rectangle, draw=white, rounded corners, fill=white,
+    text centered, anchor=north]
+
+  \def\nodeshift{0.8cm}
+  \newcommand{\Dsize}{\scriptsize\bf\sf}
+  \newcommand{\Esize}{\tiny\sf}
+
+  \Dsize
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{black}{gray}
+
+  \node (Uranium) [abstract] {\textcolor{gray}{$^\text{238}$U}};
+  \node (AuxNode01) [text width=1cm, below=of Uranium] {};
+  \node (Bismuth) [abstract, right=of AuxNode01] {\textcolor{blue}{\textbf{$^\text{214}$Bi}}};
+  \node (AuxNode02) [below=of Bismuth,yshift=\nodeshift] {{\Esize(\unit[19.9]{min})}};
+  \node (Thallium) [abstract, below=of AuxNode02] {$^\text{210}$Tl};
+  \node (AuxNode03) [below=of Thallium,yshift=\nodeshift] {{\Esize(\unit[1.3]{min})}};
+  \node (Polonium) [abstract, right=of Uranium, xshift=2.5cm,yshift=-0.5cm] {\textcolor{red}{\textbf{$^\text{214}$Po}}};
+  \node (AuxNode04) [below=of Polonium,yshift=\nodeshift] {{\Esize\textcolor{red}{\textbf{(\unit[164]{$\boldsymbol{\mu}$s})}}}};
+  \node (Lead) [abstract, below=of AuxNode04] {$^\text{210}$Pb};
+  \node (AuxNode05) [below=of Lead,yshift=\nodeshift] {{\Esize(\unit[22.3]{y})}};
+
+  \draw[thick, dashed,gray] (Uranium.east) -- ([yshift=0.5cm]Bismuth.west);
+  \draw[thick] (AuxNode02.south) -- (Thallium.north);
+  \draw[thick,blue] (Bismuth.east) -- (Polonium.west);
+  \draw[thick,red] (AuxNode04.south) -- (Lead.north);
+  \draw[thick] (Thallium.east) -- (Lead.west);
+
+  \path (0.8,-2) node[anchor=base west] {{\Esize 0.021\%}};
+  \path (4.1,-1.5) node[anchor=base west,red] {{\Dsize $\boldsymbol{\alpha}$}};
+  \path (2.8,-1.2) node[anchor=base west,blue] {{\Dsize $\boldsymbol{\beta}$}};
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

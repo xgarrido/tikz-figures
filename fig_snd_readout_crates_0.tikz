@@ -1,0 +1,91 @@
+\begin{tikzpicture}[y=-1cm]
+\sf
+\draw[black] (-0.2,-0.5) rectangle (5.4,13.5);
+\draw[black] (0.04889,0.14444) rectangle (0.28889,3.03556);
+\draw[black] (0.28889,0.14444) rectangle (0.53111,3.03556);
+\draw[black] (0.53111,0.14444) rectangle (0.77111,3.03556);
+\draw[black] (0.77111,0.14444) rectangle (1.01111,3.03556);
+\draw[black] (1.01111,0.14444) rectangle (1.25333,3.03556);
+\draw[black] (1.25333,0.14444) rectangle (1.49333,3.03556);
+\draw[black] (1.49333,0.14444) rectangle (1.73556,3.03556);
+\draw[black] (1.73556,0.14444) rectangle (1.97556,3.03556);
+\draw[black] (1.97556,0.14444) rectangle (2.21556,3.03556);
+\draw[black] (2.21556,0.14444) rectangle (2.45778,3.03556);
+\draw[black] (2.69778,0.14444) rectangle (2.94,3.03556);
+\draw[black] (3.18,0.14444) rectangle (3.42,3.03556);
+\draw[black] (3.42,0.14444) rectangle (3.66222,3.03556);
+\draw[black] (3.90222,0.14444) rectangle (4.14444,3.03556);
+\draw[black] (4.14444,0.14444) rectangle (4.38444,3.03556);
+\draw[black] (4.38444,0.14444) rectangle (4.62444,3.03556);
+\draw[black] (4.62444,0.14444) rectangle (4.86667,3.03556);
+\draw[black] (3.66222,0.14444) rectangle (3.90222,3.03556);
+\path[draw=black,fill=magenta!50] (2.45778,0.14444) rectangle (2.69778,3.03556);
+\draw[black] (2.94,0.14444) rectangle (3.18,3.03556);
+\path[draw=black,fill=blue!50] (4.86667,0.14444) rectangle (5.10667,3.03556);
+\draw[black] (0.04889,3.03556) rectangle (5.10667,4);
+\draw[black] (0,0) rectangle (5.15556,4);
+\draw[black] (0.04889,4.64444) rectangle (0.28889,7.53556);
+\draw[black] (0.28889,4.64444) rectangle (0.53111,7.53556);
+\draw[black] (0.53111,4.64444) rectangle (0.77111,7.53556);
+\draw[black] (0.77111,4.64444) rectangle (1.01111,7.53556);
+\draw[black] (1.01111,4.64444) rectangle (1.25333,7.53556);
+\draw[black] (1.25333,4.64444) rectangle (1.49333,7.53556);
+\draw[black] (1.49333,4.64444) rectangle (1.73556,7.53556);
+\draw[black] (1.73556,4.64444) rectangle (1.97556,7.53556);
+\draw[black] (1.97556,4.64444) rectangle (2.21556,7.53556);
+\draw[black] (2.21556,4.64444) rectangle (2.45778,7.53556);
+\draw[black] (2.69778,4.64444) rectangle (2.94,7.53556);
+\draw[black] (3.18,4.64444) rectangle (3.42,7.53556);
+\draw[black] (3.42,4.64444) rectangle (3.66222,7.53556);
+\draw[black] (3.90222,4.64444) rectangle (4.14444,7.53556);
+\draw[black] (4.14444,4.64444) rectangle (4.38444,7.53556);
+\draw[black] (4.38444,4.64444) rectangle (4.62444,7.53556);
+\draw[black] (4.62444,4.64444) rectangle (4.86667,7.53556);
+\draw[black] (4.86667,4.64444) rectangle (5.10667,7.53556);
+\draw[black] (3.66222,4.64444) rectangle (3.90222,7.53556);
+\path[draw=black,fill=magenta!50] (2.45778,4.64444) rectangle (2.69778,7.53556);
+\draw[black] (2.94,4.64444) rectangle (3.18,7.53556);
+\draw[black] (0.04889,7.53556) rectangle (5.10667,8.5);
+\draw[black] (0,4.5) rectangle (5.15556,8.5);
+\draw[black] (0.04889,9.14444) rectangle (0.28889,12.03556);
+\draw[black] (0.28889,9.14444) rectangle (0.53111,12.03556);
+\draw[black] (0.53111,9.14444) rectangle (0.77111,12.03556);
+\draw[black] (0.77111,9.14444) rectangle (1.01111,12.03556);
+\draw[black] (1.01111,9.14444) rectangle (1.25333,12.03556);
+\draw[black] (1.25333,9.14444) rectangle (1.49333,12.03556);
+\draw[black] (1.49333,9.14444) rectangle (1.73556,12.03556);
+\draw[black] (1.73556,9.14444) rectangle (1.97556,12.03556);
+\draw[black] (1.97556,9.14444) rectangle (2.21556,12.03556);
+\draw[black] (2.21556,9.14444) rectangle (2.45778,12.03556);
+\draw[black] (2.69778,9.14444) rectangle (2.94,12.03556);
+\draw[black] (3.18,9.14444) rectangle (3.42,12.03556);
+\draw[black] (3.42,9.14444) rectangle (3.66222,12.03556);
+\draw[black] (3.90222,9.14444) rectangle (4.14444,12.03556);
+\draw[black] (4.14444,9.14444) rectangle (4.38444,12.03556);
+\draw[black] (4.38444,9.14444) rectangle (4.62444,12.03556);
+\draw[black] (4.62444,9.14444) rectangle (4.86667,12.03556);
+\draw[black] (3.66222,9.14444) rectangle (3.90222,12.03556);
+\path[draw=black,fill=magenta!50] (2.45778,9.14444) rectangle (2.69778,12.03556);
+\draw[black] (2.94,9.14444) rectangle (3.18,12.03556);
+\draw[black] (4.86667,9.14444) rectangle (5.10667,12.03556);
+\draw[black] (0.04889,12.03556) rectangle (5.10667,13);
+\path (2.6,14) node[text=black,anchor=base] {\large{}rack ID = 0};
+\path (-0.6,11.1) node[text=black,anchor=base east] {\large{}crate ID = 0};
+\path (-0.5,6.5) node[text=black,anchor=base east] {\large{}crate ID = 1};
+\path (-0.5,2.2) node[text=black,anchor=base east] {\large{}crate ID = 2};
+\path (2.6,-0.9) node[text=black,anchor=base] {\large{}Calorimeter/Trigger Electronics};
+
+%% \path (9,0) node[text=blue!50,anchor=base east] {\large{}Carte Trigger};
+%% \draw[->, blue!50] (6.5,0) -- (5.2,1.5);
+
+%% \path (9,6.5) node[text=magenta!50,anchor=base east] {\large{}Carte Controleur};
+%% \draw[->, magenta!50] (6.0,6.3) -- (2.8,1.5);
+%% \draw[->, magenta!50] (6.0,6.4) -- (2.8,6.4);
+%% \draw[->, magenta!50] (6.0,6.5) -- (2.8,11.0);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

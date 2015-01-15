@@ -1,0 +1,30 @@
+
+\begin{tikzpicture}[scale=0.7]
+  \draw[white,very thin] (-3.9,-4.9) grid (3.9,4.9);
+
+  \definecolor{angle0}{rgb}{0.,0.,0.510}
+  \definecolor{angle1}{rgb}{0.,0.474,0.8}
+  \definecolor{angle2}{rgb}{0.184,0.850,0.812}
+  \definecolor{angle3}{rgb}{0.831,1.0,0.1607}
+  \definecolor{angle4}{rgb}{0.976,0.353,0.0196}
+  \definecolor{angle5}{rgb}{0.525,0.,0.}
+
+  %% shield
+  \def\radius{3}
+  \draw[fill=angle0] (0,0) -- (3,0) -- (1.5,2.598) -- (0,0) -- cycle;
+  \draw[fill=angle1] (0,0) -- (1.5,2.598) -- (-1.5,2.598) -- (0,0) -- cycle;
+  \draw[fill=angle2] (0,0) -- (-1.5,2.598) -- (-3,0) -- (0,0) -- cycle;
+  \draw[fill=angle3] (0,0) -- (-3,0) -- (-1.5,-2.598) -- (0,0) -- cycle;
+  \draw[fill=angle4] (0,0) -- (-1.5,-2.598) -- (1.5,-2.598) -- (0,0) -- cycle;
+  \draw[fill=angle5] (0,0) -- (1.5,-2.598) -- (3,0) -- (0,0) -- cycle;
+
+  \draw[ultra thick] (-1.5,+2.5980) -- ++(240:\radius) -- ++(300:\radius)
+  -- ++(0:\radius) -- ++(60:\radius) -- ++(120:\radius) -- (-1.5,+2.5980);
+
+\end{tikzpicture}
+
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

@@ -1,0 +1,26 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \clip (3.5,0) rectangle (8.9, 4);
+
+  \definecolor{fillColor}{rgb}{0.52941,0.80784,1}
+  \path[draw=black,fill=fillColor!90] (6.02889,3.40444) rectangle (6.59556,3.52444);
+  \definecolor{penColor}{rgb}{0.56471,0,0.56471}
+  \filldraw[penColor] (6.10667,3.53778) rectangle (6.50222,3.60444);
+  \definecolor{textColor}{rgb}{0.56471,0,0.56471}
+  \path (7.3,3.6) node[text=textColor,anchor=base west] {\small{}$^\text{207}$Bi};
+  \draw[<-,penColor] (6.6,3.6) -- (7.5,3.6);
+  \definecolor{penColor}{rgb}{0.52941,0.80784,1}
+  \draw[->,penColor] (5.3,3.5) -- (6,3.5);
+  \definecolor{textColor}{rgb}{0.52941,0.80784,1}
+  \path (3.7,3.6) node[text=textColor,anchor=base west] {\small{}scintillator};
+  \definecolor{fillColor}{rgb}{1,0.84314,0}
+  \tikzstyle{pm} = [draw=fillColor,fill=fillColor!50]
+  \path[rounded corners=6.3bp,pm] (7,2.5) rectangle (5.6,0.2);
+  \path[pm] (6.28889,2.59111) ellipse (1.21111cm and 0.80889cm);
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

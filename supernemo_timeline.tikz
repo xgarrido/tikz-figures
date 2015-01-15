@@ -1,0 +1,84 @@
+
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{blue}{RGB}{51,51,179}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{orange}{RGB}{255,160,0}
+
+  \tikzstyle{year} = [color=gray, dashed, very thick]
+  \tikzstyle{ctor} = [color=blue, ultra thick, fill, opacity=0.6]
+  \tikzstyle{data} = [red, opacity=0.6]
+  \tikzstyle{com}  = [green, opacity=0.6]
+  \tikzstyle{these}  = [orange, opacity=0.6, rounded corners=2ex]
+
+  \fill[com] (8.89,7.62) rectangle (11.5,11.43);
+  \fill[data] (25.4,6.35) -- (27.94,9.525) -- (25.4,12.7) -- (25.4,6.35) -- cycle;
+  \fill[data] (11.5,7.62) rectangle (25.4,11.43);
+  \fill[ctor] (3,7.62) rectangle (8.89,11.43);
+
+  %% \draw[year] (3.81,3.81) -- (3.81,15.24);
+  \draw[year] (5.08,3.81) -- (5.08,15.24);
+  \draw[year] (10.16,3.81) -- (10.16,15.24);
+  \draw[year] (15.24,3.81) -- (15.24,15.24);
+  \draw[year] (20.32,3.81) -- (20.32,15.24);
+  %%\draw[black] (25.4,3.81) -- (25.4,15.24);
+
+  \path (3.1275,15.875)  node[text=gray,anchor=base west]  {\LARGE{}2013};
+  \path (7.0025,15.875)  node[text=gray,anchor=base west]  {\LARGE{}2014};
+  \path (12.0825,15.875) node[text=gray,anchor=base west] {\LARGE{}2015};
+  \path (17.1625,15.875) node[text=gray,anchor=base west] {\LARGE{}2016};
+  \path (22.2425,15.875) node[text=gray,anchor=base west] {\LARGE{}2017};
+
+  \path (18.1,9.475) node[text=white] {\Huge{}\textbf{Prise de données}};
+
+  \path (5.7,8.875) node[text=white, text width=5cm, align=center] {\huge{}Construction
+    du démonstrateur};
+  \begin{scope}[yshift=-40pt]
+    \path (5.7,8.875) node[text=white] {\huge{}$^{82}$Se -- 7 kg};
+  \end{scope}
+
+  \begin{scope}[yshift=-7cm, xshift=10.3cm]
+    \path (0.0,0.0) node[text=green, fill=white] {\huge{}\emph{commissioning}};
+  \end{scope}
+
+  %% Jalon
+  \begin{scope}[xshift=8cm]
+    \draw[red] (5.08,7.62) -- (5.08,11.43);
+    \draw[red] (5.08,7.62) -- (5.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=7cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=45] {\Large{}mesure bruit de fond $^{222}$Rn};
+      \path (0.5,0.5) node[text=red, fill=white, rotate=45] {\Large{}(2 -- 3 mois)};
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[xshift=13cm]
+    \draw[red] (5.08,7.62) -- (5.08,11.43);
+    \draw[red] (5.08,7.62) -- (5.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=7cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=45] {\Large{}mesure bruit de fond interne};
+      \path (0.5,0.5) node[text=red, fill=white, rotate=45] {\Large{}$^{208}$Tl \& $^{214}$Bi (1 an)};
+      %%    \path (1.0,1.0) node[text=red, fill=white, rotate=45] {\large{}(2 -- 3 mois)};
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[xshift=17cm]
+    \draw[red] (5.08,7.62) -- (5.08,11.43);
+    \draw[red] (5.08,7.62) -- (5.5,7.12);
+    \begin{scope}[yshift=-5cm, xshift=7cm]
+      \path (0.0,0.0) node[text=red, fill=white, rotate=45] {\Large{}$\mathcal{T}_{1/2}(0\nu\beta\beta)>$ 6.5 10$^{24}$ y};
+      \path (0.5,0.5) node[text=red, fill=white, rotate=45] {\Large{}$\langle$m$_{\nu}\rangle<$ 0.2 -- 0.4 eV};
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[yshift=-4cm]
+    \fill[these] (7.5,7.62) rectangle (23.4,8.62);
+    \path (15.5,8.2) node[text=white] {\huge{}\textbf{Thèse SuperNEMO/LAL}};
+  \end{scope}
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

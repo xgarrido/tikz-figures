@@ -1,0 +1,76 @@
+\begin{tikzpicture}[y=-1cm]
+\sf
+\path[fill=magenta!10] (4.9,-0.4) rectangle (5.1,13.5);
+\definecolor{fillColor}{rgb}{0,0.81569,0}
+\path[fill=fillColor!10] (4,-0.4) rectangle (4.9,13.5);
+\path[fill=blue!10] (2.8,-0.4) rectangle (4,13.5);
+\path[fill=fillColor!10] (5.1,-0.4) rectangle (6,13.5);
+\path[fill=blue!10] (6,-0.4) rectangle (7.2,13.5);
+\path[rounded corners=3.6bp,draw=black,fill=white!90!black] (9.9,-0.7) rectangle (6.7,-1.2);
+\path (8.3,-0.8) node[text=black,anchor=base] {\large{}Tracko frame \#1};
+\path[rounded corners=3.6bp,draw=black,fill=white!90!black] (10.8,0.6) rectangle (8,0.1);
+\path (9.4,0.5) node[text=black,anchor=base] {\large{}Calo frame \#1};
+\path[rounded corners=3.6bp,draw=black,fill=white!90!black] (2.4,0.7) rectangle (-0.4,0.2);
+\path (1,0.6) node[text=black,anchor=base] {\large{}Calo frame \#0};
+\path[rounded corners=3.6bp,draw=black,fill=white!90!black] (3.9,-0.6) rectangle (0.7,-1.1);
+\path (2.3,-0.7) node[text=black,anchor=base] {\large{}Tracko frame \#0};
+\path[draw=black,fill=white!75!black,arrows=-triangle 45] (8.6,0.6) -- (7.2,1.5);
+\path[draw=black,fill=white!75!black] (4.9,1.6) rectangle (5.1,11.4);
+\path[draw=black,fill=white!75!black] (4,1.3) rectangle (4.9,11.7);
+\path[draw=black,fill=white!75!black] (5.1,1.3) rectangle (6,11.7);
+\path[draw=black,fill=white!75!black] (2.8,1) rectangle (4,12);
+\path[draw=black,fill=white!75!black] (6,1) rectangle (7.2,12);
+\path[draw=black,fill=white!75!black,arrows=-triangle 45] (1.6,0.7) -- (2.8,1.7);
+\path[draw=black,fill=fillColor!50] (4,2) rectangle (6,11);
+\draw[rounded corners=6.3bp,black] (0,6.8) rectangle (-1.2,6.1);
+\path (-0.6,6.6) node[text=black,anchor=base] {\large{}Italy};
+\draw[rounded corners=6.3bp,black] (12,6.8) rectangle (10.4,6.1);
+\path (11.2,6.6) node[text=black,anchor=base] {\large{}France};
+\draw[rounded corners=6.3bp,black] (8.8,-1.9) rectangle (6,-2.6);
+\path (7.4,-2.1) node[text=black,anchor=base] {\large{}Lab entrance};
+\path[draw=black,fill=magenta!50] (4.9,2.5) rectangle (5.1,10.5);
+\path[draw=black,fill=blue!50] (3.5,2) rectangle (4,11);
+\path[draw=black,fill=blue!50] (6,2) rectangle (6.5,11);
+\path[draw=black,fill=blue!50] (4.1,11) rectangle (4.9,11.5);
+\path[draw=black,fill=blue!50] (5.1,11) rectangle (5.9,11.5);
+\path[draw=black,fill=blue!50] (4.1,1.5) rectangle (4.9,2);
+\path[draw=black,fill=blue!50] (5.1,1.5) rectangle (5.9,2);
+\path (5,-2) node[text=black,anchor=base] {\large{}$y$};
+\path (9.6,6.6) node[text=black,anchor=base west] {\large{}$x$};
+\path[draw=black,fill=blue!25] (5.2,2.1) rectangle (5.8,10.9);
+\path[draw=black,fill=blue!25] (4.2,2.1) rectangle (4.8,10.9);
+\path (8.2,3.8) node[text=black,anchor=base west] {\large{}$\gamma$-veto (bottom/top)};
+\path (5.8,-0.7) node[text=black,anchor=base] {\large{}X-wall};
+\path (5.3,13.1) node[text=black,anchor=base west] {\large{}X-wall};
+\draw[arrows=-triangle 45,black] (5,13.9) -- (5,-1.8);
+\draw[arrows=-triangle 45,black] (0.6,6.5) -- (9.3,6.5);
+\path[draw=black,fill=white] (5,6.5) circle (0.11111cm);
+\path[rounded corners=3.6bp,draw=black,fill=white!90!black] (3.9,13.5) rectangle (1.3,13);
+\path (2.6,13.4) node[text=black,anchor=base] {\large{}Source frame};
+\draw[arrows=-triangle 45,black] (5.4,12.7) -- (5.6,11.2);
+\draw[arrows=-triangle 45,black] (2,4.8) -- (3.8,5);
+\draw[arrows=-triangle 45,black] (8,4.8) -- (6.2,5);
+\draw[arrows=-triangle 45,black] (8.1,3.7) -- (5.4,3.2);
+\draw[arrows=-triangle 45,black] (8,3.7) -- (4.5,4.9);
+\draw[arrows=-triangle 45,black] (8,9) -- (5,8.1);
+\draw[arrows=-triangle 45,black] (5.4,12.7) -- (4.4,11.2);
+\draw[dashed,black] (4.9,1.8) -- (4.9,11);
+\draw[dashed,black] (5.1,11.1) -- (5.1,1.4);
+\path[draw=black,fill=white!75!black,arrows=-triangle 45] (3.5,-0.6) -- (4.29111,1.29333);
+\path[draw=black,fill=white!75!black,arrows=-triangle 45] (7,-0.7) -- (5.7,1.3);
+\path[draw=black,fill=white!75!black,arrows=-triangle 45] (5.48667,-0.60667) -- (4.48667,1.79333);
+\draw[arrows=-triangle 45,black] (5.5,-0.6) -- (5.5,1.8);
+\draw[arrows=-triangle 45,black] (3.9,13.2) -- (4.8,13.2) -- (5,11.4);
+\path (1.9,4.9) node[text=black,anchor=base east] {\large{}Main wall};
+\path (8.2,4.9) node[text=black,anchor=base west] {\large{}Main wall};
+\path (8.2,9.2) node[text=black,anchor=base west] {\large{}Source foil};
+\path (5,6.6) node[text=black,anchor=base] {\large{}$\odot$};
+\path (4.7,7) node[text=black,anchor=base east] {\large{}$O$};
+\path (5.3,6.3) node[text=black,anchor=base west] {\large{}$z$};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

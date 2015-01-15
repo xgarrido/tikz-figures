@@ -1,0 +1,88 @@
+\begin{tikzpicture}[
+  scale=0.7,
+  y=-1cm,
+  electron/.style={color=blue!40},
+  electron multi/.style={blue,style=ultra thin,top color=blue},
+  dynode/.style={thick, black, line width=2.5},
+  pmt/.style={thick, gray},
+  shield/.style={line width=2., gray}
+]
+\draw[pmt] (10.7,4.4) +(-103:0.92195) arc (-103:-13:0.92195);
+\draw[pmt] (10.73684,5.6579) +(106:0.87478) arc (106:9:0.87478);
+
+\definecolor{penColor}{rgb}{1,0.84314,0}
+\draw[thick,penColor,fill=white] (11.125,5) +(-113:1.625) arc (-113:-247:1.625);
+\draw[pmt] (11.6,4.2) -- (15,4.2) -- (15,5.8) -- (11.6,5.8);
+
+%% \draw[color=white!95!black, line width=1.5] (9,3.01) -- (9,6.99);
+%% \draw[color=white, line width=1.5] (10.5,6.5) -- (10.5,3.5);
+
+%% Electron multiplication
+\draw[->,blue] (9.6,4.4) -- (11.9,5.5);
+\draw[electron] (11.9,5.5) -- (12.2,4.65);
+\draw[electron] (11.9,5.5) -- (12.3,4.65);
+\draw[electron] (11.9,5.5) -- (12.5,4.5);
+\draw[electron] (12.5,4.5) -- (13.1,5.35);
+\draw[electron] (12.5,4.5) -- (13,5.4);
+\draw[electron] (12.5,4.5) -- (12.9,5.45);
+\draw[electron] (12.3,4.65) -- (13,5.4);
+\draw[electron] (12.3,4.65) -- (12.8,5.5);
+\draw[electron] (12.2,4.65) -- (12.7,5.55);
+\draw[electron] (12.2,4.65) -- (12.6,5.6);
+\draw[electron] (12.2,4.65) -- (12.8,5.5);
+\draw[electron] (13.1,5.3) -- (13.5,4.5);
+\draw[electron] (13.1,5.3) -- (13.4,4.5);
+\draw[electron] (13.1,5.3) -- (13.3,4.6);
+\draw[electron] (12.9,5.4) -- (13.2,4.6);
+\draw[electron] (12.6,5.6) -- (13.1,4.7);
+\draw[electron] (12.7,5.5) -- (13.2,4.6);
+\draw[electron] (13.1,5.3) -- (13.2,4.6);
+\draw[electron] (13,5.4) -- (13.1,4.6);
+\draw[electron] (12.9,5.4) -- (13,4.7);
+\draw[electron] (13.1,5.3) -- (13.3,4.5);
+\draw[electron] (13,5.3) -- (13.2,4.6);
+\draw[electron] (12.8,5.4) -- (13.2,4.6);
+\draw[electron] (12.7,5.5) -- (13.6,4.4);
+\draw[electron] (13,5.4) -- (13.4,4.5);
+
+\shadedraw[electron multi] (13.1,4.6) -- (13.5,5.6) -- (13.95,5.4) -- (13.5,4.5) -- (13.1,4.6);
+
+%% Dynode
+\draw[dynode] (12.1,4.7) -- (12.7,4.4);
+\draw[dynode,xshift=0.9cm] (12.1,4.7) -- (12.7,4.4);
+\draw[dynode] (11.62,5.64) -- (12.22,5.34);
+\draw[dynode,xshift=0.9cm] (11.62,5.64) -- (12.22,5.34);
+\draw[dynode,xshift=1.8cm] (11.62,5.64) -- (12.22,5.34);
+
+%% Magnetic shield
+\draw[shield] (8,7.1) -- (12,7.1) -- (12, 6) -- (16, 6);
+\draw[shield] (8,2.9) -- (12,2.9) -- (12, 4) -- (16, 4);
+
+\draw[thick,<-,gray] (7.8,7.1) -- (6, 7.8);
+\path (7.2,8.3) node[anchor=base east] {\small{\sffamily\textcolor{gray}{magnetic shield}}};
+
+%% Chassis HT & MATACQ
+\draw[thick,-,red] (15.,4.8) .. controls +(1,0) and +(.0,0.) .. (16.9, 3.4);
+\path (18.6,3.2) node[anchor=base east] {\small{\sffamily\textcolor{red}{High Voltage}}};
+\draw[thick,-,black] (15.,5.3) .. controls +(1,0) and +(.0,0.) .. (16.9, 6.7);
+\path (20.5,7.0) node[anchor=base east] {\small{\sffamily MATACQ acquisition}};
+
+%% champ magnétique
+\path (10.2,8.0) node[] {\sf\huge{$\uparrow$}\large{$\vec{B}\sim\unit[25]{G}$}};
+
+%% distance
+\draw[thick,->] (8,5) -- (9.5,5);
+\path (6,4.5) node {\sf\small{shield entrance $\rightarrow$ PMT}};
+\path (6,5.0) node {\sf\small{(bottom x-axis)}};
+
+\draw[thick,->] (12,2.5) -- (9.5,2.5);
+\path (11,1.5) node {\sf\small{end of the hexa. head $\rightarrow$ PMT}};
+\path (11,2) node {\sf\small{(top x-axis)}};
+
+
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

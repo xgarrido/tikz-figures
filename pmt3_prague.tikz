@@ -1,0 +1,94 @@
+\begin{tikzpicture}[
+  y=-1cm,
+  electron/.style={blue},
+  electron multi/.style={blue,style=ultra thin,top color=blue},
+  dynode/.style={thick, black, line width=2.5},
+  pmt/.style={thick, gray}
+]
+
+% objects at depth 50:
+\draw[pmt] (10.7,4.4) +(-103:0.92195) arc (-103:-13:0.92195);
+\draw[pmt] (10.73684,5.6579) +(106:0.87478) arc (106:9:0.87478);
+
+\draw[gray,fill=white!95!black] (9,3) -- (9,7) -- (10.5,6.5) -- (10.5,3.5) -- (9,3) -- cycle;
+\definecolor{penColor}{rgb}{1,0.84314,0}
+\draw[thick,penColor,fill=white] (11.125,5) +(-113:1.625) arc (-113:-247:1.625);
+\draw[black, fill=gray!20] (3.18,5.4) circle (0.1cm);
+\path[draw=gray,fill=white!95!black] (5.5,3) rectangle (9,7);
+\draw[pmt] (11.6,4.2) -- (15,4.2) -- (15,5.8) -- (11.6,5.8);
+
+\draw[color=white!95!black, line width=1.5] (9,3.01) -- (9,6.99);
+\draw[color=white, line width=1.5] (10.5,6.5) -- (10.5,3.5);
+
+\draw[thick,->] (2,7) .. controls +(.5,0) and +(-.5,0.) .. (3.18, 5.4);
+\path (2,7) node[anchor=base east] {\normalsize{$^{207}$Bi source}};
+
+\draw[thick,->] (4,8) .. controls +(-.5,0) and +(.5,0) .. (3.4, 5.5);
+\path (4,8) node[anchor=base west] {\normalsize{$\Delta E$ discriminator}};
+\path (4.5,8.5) node[anchor=base west] {\normalsize{$\hookrightarrow$ trigger}};
+
+
+\definecolor{penColor}{rgb}{0.52941,0.80784,1}
+\draw[->,penColor] (6.8,5.3) -- (9.6,4.4);
+\draw[->,penColor] (6.5,5.1) -- (7.3,3) -- (9.7,4.2);
+\draw[->,penColor] (6.3,6) -- (5.5,6.5) -- (6.5,7) -- (9.8,6);
+\draw[->,penColor] (6.8,5.9) -- (7.7,7) -- (9.5,5.1);
+\draw[->,penColor] (7.1,5.6) -- (9.5,6.8) -- (10,6.3);
+\draw[->,penColor] (6.1,4.9) -- (5.5,4) -- (6.4,3) -- (9.6,5.7);
+\draw[->,blue] (9.6,4.4) -- (11.9,5.5);
+
+%% Electron multiplication
+\draw[->,blue] (9.6,4.4) -- (11.9,5.5);
+\draw[electron] (11.9,5.5) -- (12.2,4.65);
+\draw[electron] (11.9,5.5) -- (12.3,4.65);
+\draw[electron] (11.9,5.5) -- (12.5,4.5);
+\draw[electron] (12.5,4.5) -- (13.1,5.35);
+\draw[electron] (12.5,4.5) -- (13,5.4);
+\draw[electron] (12.5,4.5) -- (12.9,5.45);
+\draw[electron] (12.3,4.65) -- (13,5.4);
+\draw[electron] (12.3,4.65) -- (12.8,5.5);
+\draw[electron] (12.2,4.65) -- (12.7,5.55);
+\draw[electron] (12.2,4.65) -- (12.6,5.6);
+\draw[electron] (12.2,4.65) -- (12.8,5.5);
+\draw[electron] (13.1,5.3) -- (13.5,4.5);
+\draw[electron] (13.1,5.3) -- (13.4,4.5);
+\draw[electron] (13.1,5.3) -- (13.3,4.6);
+\draw[electron] (12.9,5.4) -- (13.2,4.6);
+\draw[electron] (12.6,5.6) -- (13.1,4.7);
+\draw[electron] (12.7,5.5) -- (13.2,4.6);
+\draw[electron] (13.1,5.3) -- (13.2,4.6);
+\draw[electron] (13,5.4) -- (13.1,4.6);
+\draw[electron] (12.9,5.4) -- (13,4.7);
+\draw[electron] (13.1,5.3) -- (13.3,4.5);
+\draw[electron] (13,5.3) -- (13.2,4.6);
+\draw[electron] (12.8,5.4) -- (13.2,4.6);
+\draw[electron] (12.7,5.5) -- (13.6,4.4);
+\draw[electron] (13,5.4) -- (13.4,4.5);
+
+\shadedraw[electron multi] (13.1,4.6) -- (13.5,5.6) -- (13.95,5.4) -- (13.5,4.5) -- (13.1,4.6);
+
+\draw[black] (2.94667,5.08889) -- (3.44667,5.38889) -- (3.44667,5.68889) -- (2.94667,5.38889) -- (2.94667,5.08889) -- cycle;
+
+\definecolor{textColor}{rgb}{0.52941,0.80784,1}
+\path (7.7,5.5) node[text=textColor,anchor=base west] {\large{$\gamma$}};
+\path (3.5,5.3) node[text=red,anchor=base west] {\large{$e^-$ \normalsize{(\unit[976]{keV})}}};
+
+%% Dynode
+\draw[dynode] (12.1,4.7) -- (12.7,4.4);
+\draw[dynode,xshift=0.9cm] (12.1,4.7) -- (12.7,4.4);
+\draw[dynode] (11.62,5.64) -- (12.22,5.34);
+\draw[dynode,xshift=0.9cm] (11.62,5.64) -- (12.22,5.34);
+\draw[dynode,xshift=1.8cm] (11.62,5.64) -- (12.22,5.34);
+
+% objects at depth 49:
+\definecolor{fillColor}{rgb}{0.52941,0.80784,1}
+\path[draw=fillColor,fill=fillColor] (6.3,5.2) -- (6.3,4.9) -- (6.5,5.3) -- (6.9,5.1) -- (6.6,5.4) -- (6.9,5.5) -- (6.7,5.5) -- (7.1,5.8) -- (6.6,5.6) -- (6.7,6) -- (6.5,5.8) -- (6.5,6.1) -- (6.4,5.7) -- (6.1,6) -- (6.2,5.7) -- (6,5.9) -- (6.2,5.5) -- (5.9,5.6) -- (6.1,5.4) -- (5.8,5.1) -- (6.1,5.3) -- (6.1,5) -- (6.2,5.3) -- (6.2,5.1) -- cycle;
+
+\draw[arrows=-stealth,red] (4.1,5.4) -- (6.4,5.4);
+\draw[dashed,red] (3.5,5.4) -- (4.1,5.4);
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

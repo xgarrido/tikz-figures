@@ -1,0 +1,39 @@
+\begin{tikzpicture}[y=-1cm,->,>=stealth',shorten >=0pt, scale=1.5]
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{black}{gray}
+
+  \shadedraw [ball color=gray!5] (4,4) circle (1.5cm);
+
+  \shadedraw [ball color=blue] (3.4,4.8) circle (0.22444cm);
+  \shadedraw [ball color=red] (4.6,4.8) circle (0.22444cm);
+  \shadedraw [ball color=blue] (3.4,3.2) circle (0.22444cm);
+  \shadedraw [ball color=red] (4.6,3.2) circle (0.22444cm);
+
+  \draw[black] (3.7,4.8) -- (4.3,4.8);
+  \draw[black] (5,4.7) -- (5.9,4.5);
+  \draw[black] (5,4.9) -- (5.9,5.1);
+  \draw[black] (3.7,3.2) -- (4.3,3.2);
+  \draw[black] (5,3.1) -- (5.9,2.9);
+  \draw[black] (5,3.3) -- (5.9,3.5);
+  %\draw[white] (4,2) -- (4.1,2);
+
+  \begin{scope}[xshift=7pt]
+    \path (3.,4.1) node[text=blue,anchor=base west] {\Large $n$};
+    \path (4.2,4.1) node[text=red,anchor=base west] {\Large $p$};
+  \end{scope}
+
+  \path (5.8,5.3) node[text=black,anchor=base west] {\Large $e^-$};
+  \path (5.8,2.9) node[text=black,anchor=base west] {\Large $e^-$};
+  \path (5.8,4.6) node[text=black,anchor=base west] {\Large$\overline{\nu_e}$};
+  \path (5.8,3.6) node[text=black,anchor=base west] {\Large$\overline{\nu_e}$};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
