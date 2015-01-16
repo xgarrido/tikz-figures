@@ -10,34 +10,32 @@ This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
 project.
 
 #+BEGIN_SRC shell :exports results :results raw
+  cd tikz
   for f in *.tikz
   do
       filename=${f%.*}
-      export_dir=./doc/html/figures
       # Create pdf (if newer)
-      [[ ! -a ${export_dir}/${filename}.pdf || $f -nt ${export_dir}/${filename}.pdf ]] && tikz2pdf --once $f > /dev/null 2>&1
-      mkdir -p ${export_dir}
+      [[ ! -a ../pdf/${filename}.pdf || $f -nt ../pdf/${filename}.pdf ]] && tikz2pdf --once $f > /dev/null 2>&1
+      mkdir -p ../{pdf,png}
       # Create png file
-      convert -density 100 $filename.pdf ${export_dir}/$filename.png
-      mv $filename.pdf ${export_dir}/.
-      # Copy tikz file
-      cp $filename.tikz ${export_dir}/.
-      # Copy xfig (if any)
-      [[ -a $filename.fig ]] && cp $filename.fig ${export_dir}/.
-
+      convert -density 100 $filename.pdf ../png/$filename.png
+      mv $filename.pdf ../pdf/.
+      # # Copy xfig (if any)
+      # [[ -a $filename.fig ]] && cp $filename.fig fig/.
+      github=https://raw.githubusercontent.com/xgarrido/tikz-figures/master/
       echo "* $filename"
       echo ":PROPERTIES:"
       echo ":HTML_CONTAINER_CLASS: tikz"
       echo ":CUSTOM_ID: hidden"
       echo ":END:"
-      echo "[[./figures/$filename.png]]"
+      echo "[[$github/png/$filename.png]]"
       echo "#+HTML: <div class=\"icons\">"
       typeset -A dict
       dict=( pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o fig fa-file-excel-o)
       for k in "${(@k)dict}"
       do
-          [[ -a ${export_dir}/$filename.$k ]] &&
-              echo "[[./figures/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
+          [[ -a ../$k/$filename.$k ]] &&
+              echo "[[${github}/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
       done
       echo "#+HTML: </div>"
       echo "#+HTML: <hr/>"
