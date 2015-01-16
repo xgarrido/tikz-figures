@@ -35,7 +35,7 @@ project.
       for k in "${(@k)dict}"
       do
           [[ -a ../$k/$filename.$k ]] &&
-              echo "[[${github}/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
+              echo "[[${github}/$k/$filename.$k][@@html:<i title=\"download $filename.$k\" class=\"fa ${dict[$k]} fa-lg\"></i>@@]]\n"
       done
       echo "#+HTML: </div>"
       echo "#+HTML: <hr/>"
