@@ -1,0 +1,79 @@
+\begin{tikzpicture}[y=-1cm]
+
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{black}{gray}
+
+  \newcommand{\neutrino}[1]{%
+    \shade[ball color=red, opacity=0.95] (#1) circle (0.35) node {\color{white}\huge$\nu$};
+  }
+  \newcommand{\lepton}[3]{%
+    \shade[ball color=blue, opacity=0.95] (#1) circle (#2) node {\color{white}#3};
+  }
+  \newcommand{\quark}[4]{%
+    \shade[ball color=#2, opacity=0.95] (#1) circle (#3) node {\color{white}#4};
+  }
+
+  \draw[black] (6,3.9) -- (6,4.1);
+  \draw[black] (7,3.9) -- (7,4.1);
+  \draw[black] (8,3.9) -- (8,4.1);
+  \draw[black] (9,3.9) -- (9,4.1);
+  \draw[black] (10,3.9) -- (10,4.1);
+  \draw[black] (11,3.9) -- (11,4.1);
+  \draw[black] (12,3.9) -- (12,4.1);
+  \draw[black] (13,3.9) -- (13,4.1);
+  \draw[black] (14,3.9) -- (14,4.1);
+  \draw[black] (15,3.9) -- (15,4.1);
+  \draw[black] (16,3.9) -- (16,4.1);
+  \draw[black] (17,3.9) -- (17,4.1);
+  \draw[black] (5,3.9) -- (5,4.1);
+  \draw[black] (4,3.9) -- (4,4.1);
+  \draw[black] (3,3.9) -- (3,4.1);
+  \draw[black] (18,3.9) -- (18,4.1);
+
+  \draw[arrows=-triangle 45,red] (2,3.5) -- (6.2,3.5);
+  \draw[dotted,red] (2,3.5) -- (1.5,3.5);
+
+  \draw[semithick,dotted,black] (2,4) -- (1.5,4);
+  \draw[semithick,arrows=-triangle 45,black] (2,4) -- (19.5,4);
+
+  {
+    \Large
+    \path (2.3,4.8) node[text=black,anchor=base west]  {1 meV};
+    \path (5.4,4.8) node[text=black,anchor=base west]  {1 eV};
+    \path (8.4,4.8) node[text=black,anchor=base west]  {1 keV};
+    \path (11.3,4.8) node[text=black,anchor=base west] {1 MeV};
+    \path (14.3,4.8) node[text=black,anchor=base west] {1 GeV};
+    \path (17.3,4.8) node[text=black,anchor=base west] {1 TeV};
+  }
+
+  \path (20,4.2) node[text=black,anchor=base west] {\huge masse (eV)};
+
+  \neutrino{3.3,2.9}
+  \path (3.8,3.1) node[text=red,anchor=base west] {\huge{}???};
+
+  \lepton{11.6, 3.3}{0.25}{\Large$e$}
+
+  \quark{12.3,3.34}{orange}{0.35}{\Large$u$}
+  \quark{12.8,3.2}{green}{0.35}{\Large$d$}
+
+  \quark{14.0,3.34}{green}{0.45}{\LARGE$s$}
+  \lepton{14.3, 2.8}{0.45}{\LARGE$\mu$}
+
+  \quark{15.0,3.34}{orange}{0.5}{\LARGE$c$}
+  \lepton{15.3, 2.7}{0.5}{\LARGE$\tau$}
+  \quark{15.6,3.34}{green}{0.5}{\LARGE$b$}
+
+  \quark{17.3,3.0}{orange}{0.75}{\LARGE$t$}
+
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
