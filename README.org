@@ -3,7 +3,7 @@
 #+EMAIL: xavier.garrido@gmail.com
 #+DATE: <2015-01-14 mer.>
 #+OPTIONS: ^:{} toc:nil num:nil
-#+HTML_HEAD_EXTRA: <style> .tikz {position: relative; width: 500px;} </style>
+#+HTML_HEAD_EXTRA: <style> .tikz {position: relative; width: 500px; margin: auto;} </style>
 #+HTML_HEAD_EXTRA: <style> .icons {position: absolute; left: 510px; top: 0px;} </style>
 
 This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
@@ -26,8 +26,7 @@ program.
       # Create png file
       convert -density 100 $filename.pdf ../png/$filename.png
       mv $filename.pdf ../pdf/.
-      # # Copy xfig (if any)
-      # [[ -a $filename.fig ]] && cp $filename.fig fig/.
+
       github=https://raw.githubusercontent.com/xgarrido/tikz-figures/master/
       echo "* $filename"
       echo ":PROPERTIES:"
@@ -37,7 +36,7 @@ program.
       echo "[[$github/png/$filename.png]]"
       echo "#+HTML: <div class=\"icons\">"
       typeset -A dict
-      dict=( pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o fig fa-file-excel-o)
+      dict=(pdf fa-file-pdf-o tikz fa-file-text-o png fa-file-image-o fig fa-file-excel-o)
       for k in "${(@k)dict}"
       do
           [[ -a ../$k/$filename.$k ]] &&
