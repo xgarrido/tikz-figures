@@ -9,6 +9,12 @@
 This repository holds some =tikz/pgfplots= examples related mainly to SuperNEMO
 project.
 
+Most of the figures provide a =png/pdf= file that can be directly used. A LaTeX
+editable format using =tikz= syntax is also provided. You can directly insert
+the code within a LaTeX document or just generate the associated image by using
+the [[https://raw.githubusercontent.com/xgarrido/dotfiles/master/bin/tikz2pdf][=tikz2pdf=]] program. Finally, some of the image can be edited with [[http://www.xfig.org/][xfig]]
+program.
+
 #+BEGIN_SRC shell :exports results :results raw
   cd tikz
   for f in *.tikz
